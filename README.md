@@ -1,13 +1,20 @@
 # PadRemote downloads
 
-Official PadRemote Host release downloads. This repository contains release artifacts and download information only; application source code is maintained separately.
+[Download PadRemote Host 0.13.0](https://github.com/sakilu/PadRemoteIDE-releases/releases/tag/v0.13.0). No GitHub account is required. This repository contains downloads and release information only; source code is maintained separately.
 
-[Download Host 0.12.0 engineering preview](https://github.com/sakilu/PadRemoteIDE-releases/releases/tag/v0.12.0). Windows users can select the Setup installer for Intel/AMD (amd64) or Windows on ARM (arm64). Setup offers a directory choice, Start Menu shortcuts and removal through Windows Installed Apps. Uninstall stops Host and removes program files and update caches while preserving settings and project files. Portable archives remain available for Windows, macOS and Linux.
+| Platform | Installer | Default program location | Uninstall |
+| --- | --- | --- | --- |
+| Windows Intel/AMD or ARM64 | matching Setup `.exe` | `%LOCALAPPDATA%\Programs\PadRemote Host` | Windows Installed Apps or Start Menu |
+| macOS Intel or Apple Silicon | matching Setup `.pkg` | `~/Applications/PadRemote Host.app` | open `~/Applications/Uninstall PadRemote Host.app` |
+| Debian/Ubuntu amd64 or arm64 | matching Setup `.deb` | `/opt/padremote-host` | `sudo apt remove padremote-host` |
+| Fedora/RHEL-compatible x86_64 or aarch64 | matching Setup `.rpm` | `/opt/padremote-host` | `sudo dnf remove padremote-host` |
 
-Host 0.12.0 checks for new stable versions and displays an Update button. It downloads and installs only after you select Update and confirm. Cancel leaves Host unchanged. Updating restarts Host and stops current connections and terminals, so save your work first. Failed updates are not automatically retried. A failed startup restores the previous version.
+On Linux, open the package with your software installer or run `sudo apt install ./PACKAGE.deb` / `sudo dnf install ./PACKAGE.rpm`. Launch from the application menu or run `padremote-host` as your normal user. macOS PKG installs for the current user. Save your work before installing/removing: the flow stops Host and its terminals. Settings and projects are preserved. Custom settings locations remain user-managed; exit those Host instances before removing the package.
 
-Pre-releases are not offered by the stable update channel. Older 0.11.x previews used background downloads and idle installation; install 0.12.0 to use the confirmation-based behavior. Versions 0.10.1 and earlier need a first manual installation.
+**Update behavior:** Host 0.12.0 and newer check for a release and display Update. Download and installation start only after you press Update and confirm. Older 0.11.x previews automatically update when idle. Versions 0.10.1 and earlier need an initial manual installation. Portable archives remain portable after an update; run Setup once to obtain OS installation/uninstall integration.
 
-The updater verifies an Ed25519-signed manifest and SHA256 digests. This signature is separate from Windows Authenticode and Apple Developer ID/notarization. The 0.12.0 engineering preview is not OS publisher-signed; release notes describe platform testing limits. Windows x64 installation and removal were tested locally; Apple native checks were skipped.
+0.13.0 is available on the stable update channel at the publisher's request. Windows EXE/installers are still unsigned, and macOS packages are not Developer ID signed or notarized. The Ed25519-signed update manifest and SHA256 sums verify update integrity but do not remove OS publisher warnings.
 
-Only download artifacts from this repository's Releases. No GitHub account or access token is needed. Never provide AI credentials, project contents or Host configuration files to this repository.
+Linux x64 DEB/RPM lifecycle tests passed in local Ubuntu/Fedora containers. macOS package structure and uninstall shell behavior were checked; native Apple testing and ARM64 runtime testing were skipped. See the release notes for exact validation limits. Do not interpret cross-compilation as native platform acceptance.
+
+Only download artifacts from this repository's Releases. Never upload AI credentials, private projects, Host settings or signing keys here.
