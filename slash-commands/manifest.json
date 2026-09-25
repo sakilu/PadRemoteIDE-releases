@@ -1,0 +1,3851 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-09-25T11:04:09Z",
+  "agents": {
+    "agy": {
+      "name": "Antigravity CLI",
+      "commands": [
+        {
+          "command": "/add-dir",
+          "description": {
+            "en": "Add a directory to the workspace",
+            "zh-Hant": "將目錄加入工作區",
+            "ja": "ワークスペースにディレクトリを追加",
+            "zh-Hans": "将目录添加到工作区"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/agents",
+          "description": {
+            "en": "Open Agent Manager to switch agents and view subagents",
+            "zh-Hant": "開啟 Agent 管理面板",
+            "ja": "Agent マネージャーを開く",
+            "zh-Hans": "打开 Agent 管理面板"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/artifact",
+          "description": {
+            "en": "Open the Artifact Review Panel",
+            "zh-Hant": "開啟 Artifact 審閱面板",
+            "ja": "Artifact レビューパネルを開く",
+            "zh-Hans": "打开 Artifact 审阅面板"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/boost",
+          "description": {
+            "en": "Run multi-agent deep reasoning on a task",
+            "zh-Hant": "執行多 Agent 深度推理",
+            "ja": "マルチ Agent で深い推論を実行",
+            "zh-Hans": "运行多 Agent 深度推理"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/browser",
+          "description": {
+            "en": "Invoke a browser agent for web tasks",
+            "zh-Hant": "呼叫瀏覽器代理處理網頁工作",
+            "ja": "ブラウザエージェントで Web 作業を行う",
+            "zh-Hans": "调用浏览器代理处理网页任务"
+          },
+          "source": "cli:agy 1.2.11 slash menu"
+        },
+        {
+          "command": "/btw",
+          "description": {
+            "en": "Ask a side question in the background",
+            "zh-Hant": "在背景提出附帶問題",
+            "ja": "バックグラウンドで別の質問をする",
+            "zh-Hans": "在后台提出附带问题"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/changelog",
+          "description": {
+            "en": "Show release notes and changes",
+            "zh-Hant": "顯示版本說明與變更",
+            "ja": "リリースノートと変更点を表示",
+            "zh-Hans": "显示版本说明与变更"
+          },
+          "source": "cli:agy 1.2.11 slash menu"
+        },
+        {
+          "command": "/clear",
+          "description": {
+            "en": "Clear the terminal and reset the conversation",
+            "zh-Hant": "清除終端機並重設對話",
+            "ja": "ターミナルをクリアし会話をリセット",
+            "zh-Hans": "清除终端并重置对话"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/codesearch",
+          "description": {
+            "en": "Search code in the workspace (alias /cs)",
+            "zh-Hant": "在工作區搜尋程式碼（別名 /cs）",
+            "ja": "ワークスペースのコードを検索（別名 /cs）",
+            "zh-Hans": "在工作区搜索代码（别名 /cs）"
+          },
+          "source": "cli:agy 1.2.11 slash menu"
+        },
+        {
+          "command": "/config",
+          "description": {
+            "en": "Open the Settings Editor",
+            "zh-Hant": "開啟設定編輯器",
+            "ja": "設定エディターを開く",
+            "zh-Hans": "打开设置编辑器"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/context",
+          "description": {
+            "en": "Show context usage visualization",
+            "zh-Hant": "顯示 context 使用量",
+            "ja": "コンテキスト使用量を表示",
+            "zh-Hans": "显示 context 使用量"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/copy",
+          "description": {
+            "en": "Copy the last agent response to clipboard",
+            "zh-Hant": "複製上一則 Agent 回應",
+            "ja": "直前の Agent 応答をコピー",
+            "zh-Hans": "复制上一条 Agent 回复"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/credits",
+          "description": {
+            "en": "View remaining G1 credits",
+            "zh-Hant": "查看剩餘 G1 點數",
+            "ja": "残りの G1 クレジットを表示",
+            "zh-Hans": "查看剩余 G1 点数"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/diff",
+          "description": {
+            "en": "Open the Diff Viewer for changes and commits",
+            "zh-Hant": "開啟 Diff 檢視器",
+            "ja": "Diff ビューアーを開く",
+            "zh-Hans": "打开 Diff 查看器"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/effort",
+          "description": {
+            "en": "Set the reasoning effort",
+            "zh-Hant": "設定推理強度",
+            "ja": "推論の強度を設定",
+            "zh-Hans": "设置推理强度"
+          },
+          "source": "cli:agy 1.2.11 slash menu"
+        },
+        {
+          "command": "/exit",
+          "description": {
+            "en": "Exit the TUI session",
+            "zh-Hant": "結束 TUI 工作階段",
+            "ja": "TUI セッションを終了",
+            "zh-Hans": "退出 TUI 会话"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/fast",
+          "description": {
+            "en": "Enable fast mode for quick actions",
+            "zh-Hant": "啟用快速模式",
+            "ja": "高速モードを有効化",
+            "zh-Hans": "启用快速模式"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/feedback",
+          "description": {
+            "en": "Send feedback",
+            "zh-Hant": "提交意見回饋",
+            "ja": "フィードバックを送信",
+            "zh-Hans": "提交反馈"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/fork",
+          "description": {
+            "en": "Fork the conversation into a new session",
+            "zh-Hant": "將對話分支為新工作階段",
+            "ja": "会話を新しいセッションに分岐",
+            "zh-Hans": "将对话分支为新会话"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/goal",
+          "description": {
+            "en": "Keep working until the given goal is fully done",
+            "zh-Hant": "持續執行直到指定目標完全達成",
+            "ja": "指定した目標を達成するまで作業を続ける",
+            "zh-Hans": "持续执行直到指定目标完全达成"
+          },
+          "source": "cli:agy 1.2.11 slash menu"
+        },
+        {
+          "command": "/grill-me",
+          "description": {
+            "en": "Interview me to align on a plan",
+            "zh-Hant": "透過提問與我對齊計畫",
+            "ja": "質問を通じて計画をすり合わせる",
+            "zh-Hans": "通过提问与我对齐计划"
+          },
+          "source": "cli:agy 1.2.11 slash menu"
+        },
+        {
+          "command": "/help",
+          "description": {
+            "en": "Show commands and shortcuts",
+            "zh-Hant": "顯示指令與快速鍵",
+            "ja": "コマンドとショートカットを表示",
+            "zh-Hans": "显示命令与快捷键"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/hooks",
+          "description": {
+            "en": "Browse active hooks",
+            "zh-Hant": "瀏覽啟用中的 hooks",
+            "ja": "有効な hooks を一覧表示",
+            "zh-Hans": "浏览已启用的 hooks"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/keybindings",
+          "description": {
+            "en": "Edit keyboard shortcuts",
+            "zh-Hant": "編輯鍵盤快速鍵",
+            "ja": "キーボードショートカットを編集",
+            "zh-Hans": "编辑键盘快捷键"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/learn",
+          "description": {
+            "en": "Turn recent corrections into reusable skills or rules",
+            "zh-Hant": "把近期修正整理成可重複使用的技能或規則",
+            "ja": "最近の修正を再利用できるスキルやルールにする",
+            "zh-Hans": "把近期修正整理成可复用的技能或规则"
+          },
+          "source": "cli:agy 1.2.11 slash menu"
+        },
+        {
+          "command": "/logout",
+          "description": {
+            "en": "Log out and remove auth tokens",
+            "zh-Hant": "登出並清除驗證 token",
+            "ja": "ログアウトし認証 token を削除",
+            "zh-Hans": "登出并清除认证 token"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/mcp",
+          "description": {
+            "en": "Manage MCP servers",
+            "zh-Hant": "管理 MCP 伺服器",
+            "ja": "MCP サーバーを管理",
+            "zh-Hans": "管理 MCP 服务器"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/model",
+          "description": {
+            "en": "Choose the reasoning model",
+            "zh-Hant": "選擇推理模型",
+            "ja": "推論モデルを選択",
+            "zh-Hans": "选择推理模型"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/open",
+          "description": {
+            "en": "Open a path in the default editor",
+            "zh-Hant": "以預設編輯器開啟路徑",
+            "ja": "既定のエディターでパスを開く",
+            "zh-Hans": "用默认编辑器打开路径"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/permissions",
+          "description": {
+            "en": "Manage tool permissions",
+            "zh-Hant": "管理工具權限",
+            "ja": "ツールの権限を管理",
+            "zh-Hans": "管理工具权限"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/plan",
+          "description": {
+            "en": "Plan carefully before executing a task",
+            "zh-Hant": "執行工作前先仔細規劃",
+            "ja": "作業の前に計画を立てる",
+            "zh-Hans": "执行任务前先仔细规划"
+          },
+          "source": "cli:agy 1.2.11 slash menu"
+        },
+        {
+          "command": "/planning",
+          "description": {
+            "en": "Enable planning mode for complex tasks",
+            "zh-Hant": "啟用規劃模式",
+            "ja": "計画モードを有効化",
+            "zh-Hans": "启用规划模式"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/remote-control",
+          "description": {
+            "en": "Toggle Remote Control for this session",
+            "zh-Hant": "切換 Remote Control",
+            "ja": "Remote Control を切り替え",
+            "zh-Hans": "切换 Remote Control"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/rename",
+          "description": {
+            "en": "Rename the current session",
+            "zh-Hant": "重新命名目前工作階段",
+            "ja": "現在のセッション名を変更",
+            "zh-Hans": "重命名当前会话"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/resume",
+          "description": {
+            "en": "Resume a previous conversation",
+            "zh-Hant": "繼續先前的對話",
+            "ja": "以前の会話を再開",
+            "zh-Hans": "恢复之前的对话"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/rewind",
+          "description": {
+            "en": "Rewind conversation to a previous message",
+            "zh-Hant": "將對話回溯至先前訊息",
+            "ja": "会話を以前のメッセージに戻す",
+            "zh-Hans": "将对话回退到之前的消息"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/schedule",
+          "description": {
+            "en": "Run an instruction on a schedule or as a one-time timer",
+            "zh-Hant": "定期執行指示，或設定一次性計時",
+            "ja": "指示を定期実行、または一度だけタイマー実行",
+            "zh-Hans": "定期执行指示，或设置一次性计时"
+          },
+          "source": "cli:agy 1.2.11 slash menu"
+        },
+        {
+          "command": "/skills",
+          "description": {
+            "en": "Browse loaded Agent Skills",
+            "zh-Hant": "瀏覽已載入的 Agent Skills",
+            "ja": "読み込まれた Agent Skills を表示",
+            "zh-Hans": "浏览已加载的 Agent Skills"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/statusline",
+          "description": {
+            "en": "Customize the status bar",
+            "zh-Hant": "自訂狀態列",
+            "ja": "ステータスバーをカスタマイズ",
+            "zh-Hans": "自定义状态栏"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/tasks",
+          "description": {
+            "en": "Monitor background shell tasks",
+            "zh-Hant": "監控背景 shell 工作",
+            "ja": "バックグラウンドの shell タスクを監視",
+            "zh-Hans": "监控后台 shell 任务"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/teamwork-preview",
+          "description": {
+            "en": "Launch multi-agent teams for long projects",
+            "zh-Hant": "啟動多 Agent 協作團隊",
+            "ja": "マルチ Agent チームを起動",
+            "zh-Hans": "启动多 Agent 协作团队"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/title",
+          "description": {
+            "en": "Toggle terminal window title updates",
+            "zh-Hant": "切換終端機視窗標題更新",
+            "ja": "ターミナルのタイトル更新を切り替え",
+            "zh-Hans": "切换终端窗口标题更新"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/usage",
+          "description": {
+            "en": "Show model quota usage",
+            "zh-Hant": "顯示模型配額用量",
+            "ja": "モデルのクォータ使用量を表示",
+            "zh-Hans": "显示模型配额用量"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/voice",
+          "description": {
+            "en": "Dictate a prompt by voice",
+            "zh-Hant": "以語音輸入提示",
+            "ja": "音声でプロンプトを入力",
+            "zh-Hans": "用语音输入提示"
+          },
+          "source": "https://antigravity.google/docs/cli/reference"
+        }
+      ]
+    },
+    "claude": {
+      "name": "Claude Code",
+      "commands": [
+        {
+          "command": "/add-dir",
+          "description": {
+            "en": "Add a working directory for this session",
+            "zh-Hant": "新增本次工作階段的工作目錄",
+            "ja": "作業ディレクトリを追加",
+            "zh-Hans": "为本次会话添加工作目录"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/advisor",
+          "description": {
+            "en": "Enable or disable the advisor tool",
+            "zh-Hant": "啟用或停用 advisor 工具",
+            "ja": "advisor ツールを有効化/無効化",
+            "zh-Hans": "启用或禁用 advisor 工具"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/agents",
+          "description": {
+            "en": "Show how to create and manage subagents",
+            "zh-Hant": "說明如何建立與管理 subagent",
+            "ja": "サブエージェントの作成・管理方法を表示",
+            "zh-Hans": "说明如何创建和管理 subagent"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/artifacts",
+          "description": {
+            "en": "List artifacts and attach, open or copy link",
+            "zh-Hant": "列出 artifact 並附加、開啟或複製連結",
+            "ja": "artifact の一覧・添付・リンクコピー",
+            "zh-Hans": "列出 artifact 并附加、打开或复制链接"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/auto-mode-setup",
+          "description": {
+            "en": "Draft auto mode environment entries",
+            "zh-Hant": "草擬 auto mode 環境設定",
+            "ja": "auto mode の環境設定を下書き",
+            "zh-Hans": "草拟 auto mode 环境设置"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/autocompact",
+          "description": {
+            "en": "Set the auto-compact context window",
+            "zh-Hant": "設定自動壓縮的上下文視窗",
+            "ja": "自動コンパクトのウィンドウを設定",
+            "zh-Hans": "设置自动压缩的上下文窗口"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/autofix-pr",
+          "description": {
+            "en": "Watch the branch PR in the cloud and push fixes",
+            "zh-Hant": "雲端監看分支 PR 並推送修正",
+            "ja": "クラウドで PR を監視し修正をプッシュ",
+            "zh-Hans": "云端监视分支 PR 并推送修复"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/background",
+          "description": {
+            "en": "Detach session to run as a background agent",
+            "zh-Hant": "將工作階段轉為背景代理執行",
+            "ja": "セッションをバックグラウンドで実行",
+            "zh-Hans": "将会话转为后台代理运行"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/batch",
+          "description": {
+            "en": "Run large codebase changes in parallel worktrees",
+            "zh-Hant": "以平行 worktree 執行大規模變更",
+            "ja": "大規模変更を並列 worktree で実行",
+            "zh-Hans": "用并行 worktree 执行大规模更改"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/branch",
+          "description": {
+            "en": "Branch the conversation at this point",
+            "zh-Hant": "從此處分支目前對話",
+            "ja": "この時点で会話を分岐",
+            "zh-Hans": "从此处分支当前对话"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/btw",
+          "description": {
+            "en": "Ask a side question without adding to history",
+            "zh-Hant": "提出不列入對話紀錄的旁支問題",
+            "ja": "履歴に残さずに横道の質問",
+            "zh-Hans": "提出不计入对话历史的旁支问题"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/bug",
+          "description": {
+            "en": "Report a bug or share your conversation",
+            "zh-Hant": "回報錯誤或分享對話",
+            "ja": "バグを報告または会話を共有",
+            "zh-Hans": "报告错误或分享对话"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/cd",
+          "description": {
+            "en": "Move session to another working directory",
+            "zh-Hant": "將工作階段移至其他工作目錄",
+            "ja": "セッションを別ディレクトリへ移動",
+            "zh-Hans": "将会话移至其他工作目录"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/chrome",
+          "description": {
+            "en": "Configure Claude in Chrome settings",
+            "zh-Hant": "設定 Claude in Chrome",
+            "ja": "Claude in Chrome を設定",
+            "zh-Hans": "设置 Claude in Chrome"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/claude-api",
+          "description": {
+            "en": "Load Claude API and Managed Agents references",
+            "zh-Hant": "載入 Claude API 參考資料",
+            "ja": "Claude API の参考資料を読み込む",
+            "zh-Hans": "加载 Claude API 参考资料"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/clear",
+          "description": {
+            "en": "Start a new conversation with empty context",
+            "zh-Hant": "以空白上下文開始新對話",
+            "ja": "空のコンテキストで新しい会話を開始",
+            "zh-Hans": "以空白上下文开始新对话"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/code-review",
+          "description": {
+            "en": "Review the diff or a PR for correctness bugs",
+            "zh-Hant": "審查 diff 或 PR 的正確性錯誤",
+            "ja": "diff や PR の不具合をレビュー",
+            "zh-Hans": "审查 diff 或 PR 的正确性错误"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/color",
+          "description": {
+            "en": "Set the prompt bar color",
+            "zh-Hant": "設定提示列顏色",
+            "ja": "プロンプトバーの色を設定",
+            "zh-Hans": "设置提示栏颜色"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/compact",
+          "description": {
+            "en": "Summarize the conversation to free context",
+            "zh-Hant": "摘要對話以釋放上下文",
+            "ja": "会話を要約してコンテキストを解放",
+            "zh-Hans": "总结对话以释放上下文"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/config",
+          "description": {
+            "en": "Open settings for theme, model and more",
+            "zh-Hant": "開啟設定（主題、模型等）",
+            "ja": "設定画面を開く",
+            "zh-Hans": "打开设置（主题、模型等）"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/context",
+          "description": {
+            "en": "Visualize current context usage",
+            "zh-Hant": "視覺化目前上下文用量",
+            "ja": "コンテキスト使用量を可視化",
+            "zh-Hans": "可视化当前上下文用量"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/copy",
+          "description": {
+            "en": "Copy the last response to the clipboard",
+            "zh-Hant": "複製上一則回應到剪貼簿",
+            "ja": "直前の応答をクリップボードにコピー",
+            "zh-Hans": "复制上一条回复到剪贴板"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/dataviz",
+          "description": {
+            "en": "Get design guidance for charts and dashboards",
+            "zh-Hant": "圖表與儀表板設計指引",
+            "ja": "グラフやダッシュボードの設計ガイド",
+            "zh-Hans": "图表与仪表板设计指导"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/debug",
+          "description": {
+            "en": "Enable debug logging and troubleshoot issues",
+            "zh-Hant": "啟用除錯記錄並排查問題",
+            "ja": "デバッグログを有効化して調査",
+            "zh-Hans": "启用调试日志并排查问题"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/deep-research",
+          "description": {
+            "en": "Research a question and write a cited report",
+            "zh-Hant": "深入研究問題並產出附引用報告",
+            "ja": "質問を調査し出典付きレポート作成",
+            "zh-Hans": "深入研究问题并生成带引用报告"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/design",
+          "description": {
+            "en": "Draft UI mockups as a Design artifact",
+            "zh-Hant": "以 Design artifact 草擬 UI 模型",
+            "ja": "UI モックを Design artifact で作成",
+            "zh-Hans": "以 Design artifact 草拟 UI 原型"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/design-login",
+          "description": {
+            "en": "Authorize design-system access for /design-sync",
+            "zh-Hant": "授權 /design-sync 存取設計系統",
+            "ja": "/design-sync 用のアクセスを認可",
+            "zh-Hans": "授权 /design-sync 访问设计系统"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/design-sync",
+          "description": {
+            "en": "Upload your React design system to Claude Design",
+            "zh-Hant": "上傳 React 設計系統至 Claude Design",
+            "ja": "React デザインシステムをアップロード",
+            "zh-Hans": "上传 React 设计系统到 Claude Design"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/desktop",
+          "description": {
+            "en": "Continue this session in the Desktop app",
+            "zh-Hant": "在桌面應用程式中繼續工作階段",
+            "ja": "デスクトップアプリで続行",
+            "zh-Hans": "在桌面应用中继续会话"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/diff",
+          "description": {
+            "en": "Review changes in your working tree",
+            "zh-Hant": "檢視工作目錄中的變更",
+            "ja": "作業ツリーの変更を確認",
+            "zh-Hans": "查看工作区中的更改"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/doctor",
+          "description": {
+            "en": "Run a setup checkup and fix issues",
+            "zh-Hant": "執行安裝檢查並修正問題",
+            "ja": "セットアップを診断して修正",
+            "zh-Hans": "运行安装检查并修复问题"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/effort",
+          "description": {
+            "en": "Set the effort level",
+            "zh-Hant": "設定推理強度",
+            "ja": "エフォートレベルを設定",
+            "zh-Hans": "设置推理强度"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/exit",
+          "description": {
+            "en": "Exit the CLI",
+            "zh-Hant": "結束 CLI",
+            "ja": "CLI を終了",
+            "zh-Hans": "退出 CLI"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/export",
+          "description": {
+            "en": "Export the conversation as plain text",
+            "zh-Hant": "將對話匯出為純文字",
+            "ja": "会話をテキストでエクスポート",
+            "zh-Hans": "将对话导出为纯文本"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/fast",
+          "description": {
+            "en": "Toggle fast mode",
+            "zh-Hant": "切換快速模式",
+            "ja": "高速モードを切り替え",
+            "zh-Hans": "切换快速模式"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/feedback",
+          "description": {
+            "en": "Send product feedback about Claude Code",
+            "zh-Hant": "傳送 Claude Code 意見回饋",
+            "ja": "Claude Code へのフィードバック送信",
+            "zh-Hans": "发送 Claude Code 反馈"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/fewer-permission-prompts",
+          "description": {
+            "en": "Add an allowlist to reduce permission prompts",
+            "zh-Hant": "新增允許清單以減少權限提示",
+            "ja": "許可リストで権限確認を削減",
+            "zh-Hans": "添加允许列表以减少权限提示"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/focus",
+          "description": {
+            "en": "Toggle the focus view",
+            "zh-Hant": "切換專注檢視",
+            "ja": "フォーカス表示を切り替え",
+            "zh-Hans": "切换专注视图"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/fork",
+          "description": {
+            "en": "Copy the conversation into a background session",
+            "zh-Hant": "將對話複製到背景工作階段",
+            "ja": "会話をバックグラウンドへ複製",
+            "zh-Hans": "将对话复制到后台会话"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/goal",
+          "description": {
+            "en": "Set a goal Claude works toward across turns",
+            "zh-Hant": "設定 Claude 持續達成的目標",
+            "ja": "Claude が達成するまで続ける目標を設定",
+            "zh-Hans": "设置 Claude 持续达成的目标"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/heapdump",
+          "description": {
+            "en": "Write a heap snapshot to diagnose memory use",
+            "zh-Hant": "寫入堆積快照以診斷記憶體",
+            "ja": "ヒープスナップショットを出力",
+            "zh-Hans": "写入堆快照以诊断内存"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/help",
+          "description": {
+            "en": "Show help and available commands",
+            "zh-Hant": "顯示說明與可用指令",
+            "ja": "ヘルプとコマンド一覧を表示",
+            "zh-Hans": "显示帮助和可用命令"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/hooks",
+          "description": {
+            "en": "View hook configurations",
+            "zh-Hant": "檢視 hook 設定",
+            "ja": "hook の設定を表示",
+            "zh-Hans": "查看 hook 设置"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/ide",
+          "description": {
+            "en": "Manage IDE integrations and show status",
+            "zh-Hant": "管理 IDE 整合並顯示狀態",
+            "ja": "IDE 連携の管理と状態表示",
+            "zh-Hans": "管理 IDE 集成并显示状态"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/import",
+          "description": {
+            "en": "Import config from Codex, Gemini CLI or Cursor",
+            "zh-Hant": "從 Codex、Gemini、Cursor 匯入設定",
+            "ja": "Codex 等から設定をインポート",
+            "zh-Hans": "从 Codex、Gemini、Cursor 导入设置"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/init",
+          "description": {
+            "en": "Initialize project with a CLAUDE.md guide",
+            "zh-Hant": "以 CLAUDE.md 初始化專案",
+            "ja": "CLAUDE.md でプロジェクトを初期化",
+            "zh-Hans": "用 CLAUDE.md 初始化项目"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/insights",
+          "description": {
+            "en": "Generate a report analyzing recent sessions",
+            "zh-Hant": "產生近期工作階段分析報告",
+            "ja": "最近のセッション分析レポートを生成",
+            "zh-Hans": "生成近期会话分析报告"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/install-github-app",
+          "description": {
+            "en": "Install the Claude GitHub App for a repo",
+            "zh-Hant": "為儲存庫安裝 Claude GitHub App",
+            "ja": "Claude GitHub App をインストール",
+            "zh-Hans": "为仓库安装 Claude GitHub App"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/install-slack-app",
+          "description": {
+            "en": "Install the Claude Slack app",
+            "zh-Hant": "安裝 Claude Slack 應用程式",
+            "ja": "Claude Slack アプリをインストール",
+            "zh-Hans": "安装 Claude Slack 应用"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/keybindings",
+          "description": {
+            "en": "Open your keyboard shortcuts file",
+            "zh-Hant": "開啟鍵盤快捷鍵檔案",
+            "ja": "キーボードショートカットのファイルを開く",
+            "zh-Hans": "打开键盘快捷键文件"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/list-agents",
+          "description": {
+            "en": "List agents and sessions Claude can message",
+            "zh-Hant": "列出 Claude 可傳訊的代理與工作階段",
+            "ja": "メッセージ可能なエージェント一覧",
+            "zh-Hans": "列出 Claude 可发消息的代理和会话"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/login",
+          "description": {
+            "en": "Sign in to your Anthropic account",
+            "zh-Hant": "登入 Anthropic 帳號",
+            "ja": "Anthropic アカウントにサインイン",
+            "zh-Hans": "登录 Anthropic 账号"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/logout",
+          "description": {
+            "en": "Sign out from your Anthropic account",
+            "zh-Hant": "登出 Anthropic 帳號",
+            "ja": "Anthropic アカウントからサインアウト",
+            "zh-Hans": "退出 Anthropic 账号"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/loop",
+          "description": {
+            "en": "Run a prompt repeatedly on an interval",
+            "zh-Hant": "定期重複執行提示",
+            "ja": "プロンプトを定期的に繰り返し実行",
+            "zh-Hans": "定期重复运行提示"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/mcp",
+          "description": {
+            "en": "Manage MCP server connections and OAuth",
+            "zh-Hant": "管理 MCP 伺服器連線與 OAuth",
+            "ja": "MCP サーバー接続と OAuth を管理",
+            "zh-Hans": "管理 MCP 服务器连接和 OAuth"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/memory",
+          "description": {
+            "en": "Edit CLAUDE.md files and manage auto memory",
+            "zh-Hant": "編輯 CLAUDE.md 與管理自動記憶",
+            "ja": "CLAUDE.md 編集と自動メモリ管理",
+            "zh-Hans": "编辑 CLAUDE.md 并管理自动记忆"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/mobile",
+          "description": {
+            "en": "Show QR code to get the Claude mobile app",
+            "zh-Hant": "顯示下載 Claude 行動應用程式的 QR 碼",
+            "ja": "モバイルアプリの QR コードを表示",
+            "zh-Hans": "显示 Claude 移动应用二维码"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/model",
+          "description": {
+            "en": "Switch the AI model",
+            "zh-Hant": "切換 AI 模型",
+            "ja": "AI モデルを切り替え",
+            "zh-Hans": "切换 AI 模型"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/output-style",
+          "description": {
+            "en": "List or switch output styles",
+            "zh-Hant": "列出或切換輸出風格",
+            "ja": "出力スタイルの一覧・切り替え",
+            "zh-Hans": "列出或切换输出风格"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/passes",
+          "description": {
+            "en": "Share a free week of Claude Code with friends",
+            "zh-Hant": "與朋友分享 Claude Code 免費一週",
+            "ja": "Claude Code 無料1週間を友人に共有",
+            "zh-Hans": "与朋友分享 Claude Code 免费一周"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/permissions",
+          "description": {
+            "en": "Manage tool permission rules",
+            "zh-Hant": "管理工具權限規則",
+            "ja": "ツールの権限ルールを管理",
+            "zh-Hans": "管理工具权限规则"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/plan",
+          "description": {
+            "en": "Enter plan mode",
+            "zh-Hant": "進入規劃模式",
+            "ja": "プランモードに入る",
+            "zh-Hans": "进入规划模式"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/plugin",
+          "description": {
+            "en": "Manage Claude Code plugins",
+            "zh-Hant": "管理 Claude Code 外掛",
+            "ja": "Claude Code プラグインを管理",
+            "zh-Hans": "管理 Claude Code 插件"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/powerup",
+          "description": {
+            "en": "Discover features through interactive lessons",
+            "zh-Hant": "透過互動課程探索功能",
+            "ja": "対話型レッスンで機能を学ぶ",
+            "zh-Hans": "通过互动课程探索功能"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/privacy-settings",
+          "description": {
+            "en": "View and update privacy settings",
+            "zh-Hant": "檢視與更新隱私設定",
+            "ja": "プライバシー設定の確認・変更",
+            "zh-Hans": "查看和更新隐私设置"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/radio",
+          "description": {
+            "en": "Open Claude FM lo-fi radio",
+            "zh-Hant": "開啟 Claude FM lo-fi 電台",
+            "ja": "Claude FM lo-fi ラジオを開く",
+            "zh-Hans": "打开 Claude FM lo-fi 电台"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/rate-limit-options",
+          "description": {
+            "en": "Show options when a usage limit blocks you",
+            "zh-Hant": "顯示達到用量上限時的選項",
+            "ja": "使用量上限時の選択肢を表示",
+            "zh-Hans": "显示达到用量上限时的选项"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/recap",
+          "description": {
+            "en": "Generate a one-line session summary",
+            "zh-Hant": "產生一行工作階段摘要",
+            "ja": "セッションの1行要約を生成",
+            "zh-Hans": "生成一行会话摘要"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/release-notes",
+          "description": {
+            "en": "View the changelog",
+            "zh-Hant": "檢視版本更新紀錄",
+            "ja": "変更履歴を表示",
+            "zh-Hans": "查看更新日志"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/reload-plugins",
+          "description": {
+            "en": "Reload active plugins without restarting",
+            "zh-Hant": "不重新啟動即重新載入外掛",
+            "ja": "再起動せずプラグインを再読み込み",
+            "zh-Hans": "无需重启即重新加载插件"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/reload-skills",
+          "description": {
+            "en": "Re-scan skill and command directories",
+            "zh-Hant": "重新掃描 skill 與指令目錄",
+            "ja": "skill とコマンドを再スキャン",
+            "zh-Hans": "重新扫描 skill 和命令目录"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/remote-control",
+          "description": {
+            "en": "Make this session available for Remote Control",
+            "zh-Hant": "開放此工作階段供 Remote Control",
+            "ja": "Remote Control でセッションを操作可能に",
+            "zh-Hans": "开放此会话供 Remote Control"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/remote-env",
+          "description": {
+            "en": "Choose the default cloud environment",
+            "zh-Hant": "選擇預設雲端環境",
+            "ja": "既定のクラウド環境を選択",
+            "zh-Hans": "选择默认云环境"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/rename",
+          "description": {
+            "en": "Rename the current session",
+            "zh-Hant": "重新命名目前工作階段",
+            "ja": "現在のセッション名を変更",
+            "zh-Hans": "重命名当前会话"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/resume",
+          "description": {
+            "en": "Resume a previous conversation",
+            "zh-Hant": "繼續先前的對話",
+            "ja": "以前の会話を再開",
+            "zh-Hans": "恢复之前的对话"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/rewind",
+          "description": {
+            "en": "Rewind conversation or code to a checkpoint",
+            "zh-Hant": "將對話或程式碼倒回檢查點",
+            "ja": "会話やコードをチェックポイントへ戻す",
+            "zh-Hans": "将对话或代码回退到检查点"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/run",
+          "description": {
+            "en": "Launch and drive your app to see a change work",
+            "zh-Hant": "啟動並操作應用程式驗證變更",
+            "ja": "アプリを起動して変更を確認",
+            "zh-Hans": "启动并操作应用验证更改"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/run-skill-generator",
+          "description": {
+            "en": "Teach /run and /verify how to run your app",
+            "zh-Hant": "教 /run 與 /verify 如何執行應用程式",
+            "ja": "/run と /verify に起動方法を教える",
+            "zh-Hans": "教 /run 和 /verify 如何运行应用"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/sandbox",
+          "description": {
+            "en": "Toggle sandbox mode",
+            "zh-Hant": "切換沙箱模式",
+            "ja": "サンドボックスモードを切り替え",
+            "zh-Hans": "切换沙箱模式"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/schedule",
+          "description": {
+            "en": "Create, list or run cloud routines",
+            "zh-Hant": "建立、列出或執行雲端排程",
+            "ja": "クラウドのルーチンを作成・実行",
+            "zh-Hans": "创建、列出或运行云端例程"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/scroll-speed",
+          "description": {
+            "en": "Adjust mouse wheel scroll speed",
+            "zh-Hant": "調整滑鼠滾輪捲動速度",
+            "ja": "マウスホイールのスクロール速度を調整",
+            "zh-Hans": "调整鼠标滚轮滚动速度"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/security-review",
+          "description": {
+            "en": "Check branch changes for security vulnerabilities",
+            "zh-Hant": "檢查分支變更的安全漏洞",
+            "ja": "ブランチ変更の脆弱性をチェック",
+            "zh-Hans": "检查分支更改的安全漏洞"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/setup-bedrock",
+          "description": {
+            "en": "Configure Amazon Bedrock with a wizard",
+            "zh-Hant": "以精靈設定 Amazon Bedrock",
+            "ja": "ウィザードで Amazon Bedrock を設定",
+            "zh-Hans": "用向导设置 Amazon Bedrock"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/setup-vertex",
+          "description": {
+            "en": "Configure Google Cloud's Agent Platform",
+            "zh-Hant": "設定 Google Cloud Agent Platform",
+            "ja": "Google Cloud Agent Platform を設定",
+            "zh-Hans": "设置 Google Cloud Agent Platform"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/simplify",
+          "description": {
+            "en": "Review changed code for cleanup and apply fixes",
+            "zh-Hant": "審查變更程式碼並整理",
+            "ja": "変更コードを整理して修正を適用",
+            "zh-Hans": "审查更改代码并清理"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/skill-doctor",
+          "description": {
+            "en": "Show skill context cost and usage",
+            "zh-Hant": "顯示 skill 的上下文成本與使用率",
+            "ja": "skill のコンテキスト消費と利用状況",
+            "zh-Hans": "显示 skill 的上下文成本和使用率"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/skills",
+          "description": {
+            "en": "List available skills",
+            "zh-Hant": "列出可用的 skill",
+            "ja": "利用可能な skill を一覧表示",
+            "zh-Hans": "列出可用的 skill"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/status",
+          "description": {
+            "en": "Show version, model, account and connectivity",
+            "zh-Hant": "顯示版本、模型、帳號與連線狀態",
+            "ja": "バージョン・モデル・接続状態を表示",
+            "zh-Hans": "显示版本、模型、账号和连接状态"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/statusline",
+          "description": {
+            "en": "Configure the status line",
+            "zh-Hant": "設定狀態列",
+            "ja": "ステータスラインを設定",
+            "zh-Hans": "设置状态栏"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/stickers",
+          "description": {
+            "en": "Order Claude Code stickers",
+            "zh-Hant": "訂購 Claude Code 貼紙",
+            "ja": "Claude Code ステッカーを注文",
+            "zh-Hans": "订购 Claude Code 贴纸"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/stop",
+          "description": {
+            "en": "Stop the attached background session",
+            "zh-Hant": "停止目前的背景工作階段",
+            "ja": "バックグラウンドセッションを停止",
+            "zh-Hans": "停止当前后台会话"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/subtask",
+          "description": {
+            "en": "Hand a task to a forked background subagent",
+            "zh-Hant": "交由分叉的背景 subagent 處理任務",
+            "ja": "タスクをフォークしたサブエージェントへ",
+            "zh-Hans": "交给分叉的后台 subagent 处理任务"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/tasks",
+          "description": {
+            "en": "View and manage background work",
+            "zh-Hant": "檢視與管理背景工作",
+            "ja": "バックグラウンド作業を表示・管理",
+            "zh-Hans": "查看和管理后台任务"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/team-onboarding",
+          "description": {
+            "en": "Generate a team onboarding guide",
+            "zh-Hant": "產生團隊新手指南",
+            "ja": "チーム向けオンボーディングガイド生成",
+            "zh-Hans": "生成团队入门指南"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/teleport",
+          "description": {
+            "en": "Pull a cloud session into this terminal",
+            "zh-Hant": "將雲端工作階段拉到此終端機",
+            "ja": "クラウドセッションをこの端末に取り込む",
+            "zh-Hans": "将云端会话拉到此终端"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/terminal-setup",
+          "description": {
+            "en": "Set up terminal newline keybinding",
+            "zh-Hant": "設定終端機換行快捷鍵",
+            "ja": "ターミナルの改行キーを設定",
+            "zh-Hans": "设置终端换行快捷键"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/theme",
+          "description": {
+            "en": "Change the color theme",
+            "zh-Hant": "變更色彩主題",
+            "ja": "カラーテーマを変更",
+            "zh-Hans": "更改颜色主题"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/tui",
+          "description": {
+            "en": "Set the terminal UI renderer",
+            "zh-Hant": "設定終端機 UI 渲染器",
+            "ja": "ターミナル UI のレンダラーを設定",
+            "zh-Hans": "设置终端 UI 渲染器"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/ultrareview",
+          "description": {
+            "en": "Run a cloud agent that finds and verifies bugs in your branch",
+            "zh-Hant": "啟動雲端代理，找出並驗證分支中的錯誤",
+            "ja": "クラウドエージェントでブランチのバグを検出・検証",
+            "zh-Hans": "启动云端代理，找出并验证分支中的错误"
+          },
+          "source": "cli:claude 2.1.282 slash menu"
+        },
+        {
+          "command": "/update-config",
+          "description": {
+            "en": "Describe a settings change for Claude to apply",
+            "zh-Hant": "描述設定變更由 Claude 修改",
+            "ja": "設定変更を説明して Claude に適用",
+            "zh-Hans": "描述设置更改由 Claude 修改"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/upgrade",
+          "description": {
+            "en": "Open the plan upgrade page",
+            "zh-Hant": "開啟方案升級頁面",
+            "ja": "プランのアップグレードページを開く",
+            "zh-Hans": "打开套餐升级页面"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/usage",
+          "description": {
+            "en": "Show cost, plan usage limits and stats",
+            "zh-Hant": "顯示費用、方案用量與統計",
+            "ja": "コスト・使用量上限・統計を表示",
+            "zh-Hans": "显示费用、套餐用量和统计"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/usage-credits",
+          "description": {
+            "en": "Configure or request usage credits",
+            "zh-Hant": "設定或申請使用額度",
+            "ja": "使用クレジットの設定・申請",
+            "zh-Hans": "设置或申请使用额度"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/verify",
+          "description": {
+            "en": "Build and run the app to verify a change",
+            "zh-Hant": "建置並執行應用程式驗證變更",
+            "ja": "アプリを実行して変更を検証",
+            "zh-Hans": "构建并运行应用验证更改"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/voice",
+          "description": {
+            "en": "Toggle voice dictation",
+            "zh-Hant": "切換語音輸入",
+            "ja": "音声入力を切り替え",
+            "zh-Hans": "切换语音输入"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/web-setup",
+          "description": {
+            "en": "Connect GitHub for cloud sessions",
+            "zh-Hant": "為雲端工作階段連結 GitHub",
+            "ja": "クラウドセッション用に GitHub 接続",
+            "zh-Hans": "为云端会话连接 GitHub"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/workflow-authoring",
+          "description": {
+            "en": "Load the reference for writing workflow scripts",
+            "zh-Hant": "載入工作流程腳本撰寫參考",
+            "ja": "ワークフロースクリプトの資料を読込",
+            "zh-Hans": "加载工作流脚本编写参考"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/workflows",
+          "description": {
+            "en": "Watch and manage workflow runs",
+            "zh-Hant": "檢視與管理工作流程執行",
+            "ja": "ワークフローの実行を監視・管理",
+            "zh-Hans": "查看和管理工作流运行"
+          },
+          "source": "https://code.claude.com/docs/en/commands.md"
+        }
+      ]
+    },
+    "codex": {
+      "name": "Codex CLI",
+      "commands": [
+        {
+          "command": "/agent",
+          "description": {
+            "en": "Switch the active agent thread",
+            "zh-Hant": "切換目前的代理執行緒",
+            "ja": "アクティブなエージェントスレッドを切り替え",
+            "zh-Hans": "切换当前的代理线程"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/agents",
+          "description": {
+            "en": "Open the agent command center",
+            "zh-Hant": "開啟代理指揮中心",
+            "ja": "エージェントのコマンドセンターを開く",
+            "zh-Hans": "打开代理指挥中心"
+          },
+          "source": "cli:codex 0.157.0 slash menu"
+        },
+        {
+          "command": "/app",
+          "description": {
+            "en": "Continue the session in the ChatGPT desktop app",
+            "zh-Hant": "在 ChatGPT 桌面應用程式中繼續",
+            "ja": "ChatGPT デスクトップアプリで続行",
+            "zh-Hans": "在 ChatGPT 桌面应用中继续"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/approve",
+          "description": {
+            "en": "Approve one retry of an auto review denial",
+            "zh-Hant": "核准重試一次被自動審查拒絕的操作",
+            "ja": "自動レビューで拒否された操作を1回再試行",
+            "zh-Hans": "批准重试一次被自动审查拒绝的操作"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/apps",
+          "description": {
+            "en": "Browse apps and insert them into the prompt",
+            "zh-Hant": "瀏覽應用程式並插入提示",
+            "ja": "アプリを参照してプロンプトに挿入",
+            "zh-Hans": "浏览应用并插入提示"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/archive",
+          "description": {
+            "en": "Archive the current session and exit",
+            "zh-Hant": "封存目前工作階段並結束",
+            "ja": "現在のセッションをアーカイブして終了",
+            "zh-Hans": "归档当前会话并退出"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/cd",
+          "description": {
+            "en": "Change the current working directory",
+            "zh-Hant": "變更目前的工作目錄",
+            "ja": "現在の作業ディレクトリを変更",
+            "zh-Hans": "更改当前工作目录"
+          },
+          "source": "cli:codex 0.157.0 slash menu"
+        },
+        {
+          "command": "/clear",
+          "description": {
+            "en": "Clear the terminal and start a new chat",
+            "zh-Hant": "清除終端機並開始新對話",
+            "ja": "ターミナルをクリアして新しいチャットを開始",
+            "zh-Hans": "清除终端并开始新对话"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/compact",
+          "description": {
+            "en": "Summarize the chat to free tokens",
+            "zh-Hant": "摘要對話以釋放 token",
+            "ja": "チャットを要約して token を節約",
+            "zh-Hans": "总结对话以释放 token"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/copy",
+          "description": {
+            "en": "Copy the latest completed Codex output",
+            "zh-Hant": "複製最新完成的 Codex 輸出",
+            "ja": "最新の Codex 出力をコピー",
+            "zh-Hans": "复制最新完成的 Codex 输出"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/daemon",
+          "description": {
+            "en": "Manage the local background server",
+            "zh-Hant": "管理本機背景伺服器",
+            "ja": "ローカルのバックグラウンドサーバーを管理",
+            "zh-Hans": "管理本机后台服务器"
+          },
+          "source": "cli:codex 0.157.0 slash menu"
+        },
+        {
+          "command": "/debug-config",
+          "description": {
+            "en": "Print config layer diagnostics",
+            "zh-Hant": "輸出設定層級診斷資訊",
+            "ja": "設定レイヤーの診断情報を表示",
+            "zh-Hans": "输出配置层级诊断信息"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/delete",
+          "description": {
+            "en": "Permanently delete the current session and exit",
+            "zh-Hant": "永久刪除目前工作階段並結束",
+            "ja": "現在のセッションを完全に削除して終了",
+            "zh-Hans": "永久删除当前会话并退出"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/diff",
+          "description": {
+            "en": "Show the Git diff including untracked files",
+            "zh-Hant": "顯示 Git diff（含未追蹤檔案）",
+            "ja": "Git diff を表示（未追跡ファイル含む）",
+            "zh-Hans": "显示 Git diff（含未跟踪文件）"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/exit",
+          "description": {
+            "en": "Exit Codex",
+            "zh-Hant": "結束 Codex",
+            "ja": "Codex を終了",
+            "zh-Hans": "退出 Codex"
+          },
+          "source": "cli:codex 0.157.0 slash menu"
+        },
+        {
+          "command": "/experimental",
+          "description": {
+            "en": "Toggle experimental features",
+            "zh-Hant": "切換實驗性功能",
+            "ja": "実験的機能を切り替え",
+            "zh-Hans": "切换实验性功能"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/export",
+          "description": {
+            "en": "Export the conversation as Markdown",
+            "zh-Hant": "將對話匯出為 Markdown",
+            "ja": "会話を Markdown で書き出す",
+            "zh-Hans": "将对话导出为 Markdown"
+          },
+          "source": "cli:codex 0.157.0 slash menu"
+        },
+        {
+          "command": "/fast",
+          "description": {
+            "en": "Toggle the model's Fast service tier",
+            "zh-Hant": "切換模型的 Fast 服務層級",
+            "ja": "モデルの Fast ティアを切り替え",
+            "zh-Hans": "切换模型的 Fast 服务层级"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/feedback",
+          "description": {
+            "en": "Send logs to the Codex maintainers",
+            "zh-Hant": "傳送記錄給 Codex 維護者",
+            "ja": "Codex 開発者にログを送信",
+            "zh-Hans": "发送日志给 Codex 维护者"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/fork",
+          "description": {
+            "en": "Fork the current chat into a new chat",
+            "zh-Hant": "將目前對話分支為新對話",
+            "ja": "現在のチャットを新しいチャットに分岐",
+            "zh-Hans": "将当前对话分支为新对话"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/goal",
+          "description": {
+            "en": "Set, view or manage a task goal",
+            "zh-Hant": "設定、檢視或管理任務目標",
+            "ja": "タスク目標を設定・表示・管理",
+            "zh-Hans": "设置、查看或管理任务目标"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/hooks",
+          "description": {
+            "en": "View and manage lifecycle hooks",
+            "zh-Hant": "檢視與管理生命週期 hook",
+            "ja": "ライフサイクル hook を表示・管理",
+            "zh-Hans": "查看与管理生命周期 hook"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/ide",
+          "description": {
+            "en": "Include open files and selection from the IDE",
+            "zh-Hant": "加入 IDE 開啟的檔案與選取內容",
+            "ja": "IDE のファイルと選択範囲を含める",
+            "zh-Hans": "加入 IDE 打开的文件与选中内容"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/import",
+          "description": {
+            "en": "Import Claude Code or Cursor setup and chats",
+            "zh-Hant": "匯入 Claude Code 或 Cursor 設定與對話",
+            "ja": "Claude Code や Cursor の設定とチャットを取込",
+            "zh-Hans": "导入 Claude Code 或 Cursor 设置与对话"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/init",
+          "description": {
+            "en": "Generate an AGENTS.md scaffold",
+            "zh-Hant": "產生 AGENTS.md 範本",
+            "ja": "AGENTS.md のひな形を生成",
+            "zh-Hans": "生成 AGENTS.md 模板"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/keymap",
+          "description": {
+            "en": "Remap TUI keyboard shortcuts",
+            "zh-Hant": "重新設定 TUI 鍵盤快速鍵",
+            "ja": "TUI のキーボードショートカットを変更",
+            "zh-Hans": "重新设置 TUI 键盘快捷键"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/logout",
+          "description": {
+            "en": "Sign out of Codex",
+            "zh-Hant": "登出 Codex",
+            "ja": "Codex からサインアウト",
+            "zh-Hans": "退出登录 Codex"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/mcp",
+          "description": {
+            "en": "List configured MCP tools",
+            "zh-Hant": "列出已設定的 MCP 工具",
+            "ja": "設定済みの MCP ツールを一覧表示",
+            "zh-Hans": "列出已配置的 MCP 工具"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/memories",
+          "description": {
+            "en": "Configure memory use and generation",
+            "zh-Hant": "設定記憶的使用與產生",
+            "ja": "メモリの使用と生成を設定",
+            "zh-Hans": "设置记忆的使用与生成"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/mention",
+          "description": {
+            "en": "Attach a file to the chat",
+            "zh-Hant": "將檔案附加到對話",
+            "ja": "ファイルをチャットに添付",
+            "zh-Hans": "将文件附加到对话"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/model",
+          "description": {
+            "en": "Choose the active model and reasoning effort",
+            "zh-Hant": "選擇使用的模型與推理強度",
+            "ja": "使用するモデルと推論レベルを選択",
+            "zh-Hans": "选择使用的模型与推理强度"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/new",
+          "description": {
+            "en": "Start a new chat in the same session",
+            "zh-Hant": "在同一工作階段開始新對話",
+            "ja": "同じセッションで新しいチャットを開始",
+            "zh-Hans": "在同一会话中开始新对话"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/permissions",
+          "description": {
+            "en": "Set what Codex can do without asking",
+            "zh-Hant": "設定 Codex 免詢問即可執行的操作",
+            "ja": "確認なしで Codex が行える操作を設定",
+            "zh-Hans": "设置 Codex 无需询问即可执行的操作"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/personality",
+          "description": {
+            "en": "Choose a communication style",
+            "zh-Hant": "選擇回應的溝通風格",
+            "ja": "応答のコミュニケーションスタイルを選択",
+            "zh-Hans": "选择回复的沟通风格"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/pets",
+          "description": {
+            "en": "Choose or hide a terminal pet",
+            "zh-Hant": "選擇或隱藏終端機寵物",
+            "ja": "ターミナルペットを選択・非表示",
+            "zh-Hans": "选择或隐藏终端宠物"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/plan",
+          "description": {
+            "en": "Switch to plan mode",
+            "zh-Hant": "切換至規劃模式",
+            "ja": "プランモードに切り替え",
+            "zh-Hans": "切换到规划模式"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/plugins",
+          "description": {
+            "en": "Browse installed and discoverable plugins",
+            "zh-Hant": "瀏覽已安裝與可用的外掛",
+            "ja": "インストール済み・利用可能なプラグインを参照",
+            "zh-Hans": "浏览已安装与可用的插件"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/ps",
+          "description": {
+            "en": "Show background terminals and recent output",
+            "zh-Hant": "顯示背景終端機與最近輸出",
+            "ja": "バックグラウンド端末と最近の出力を表示",
+            "zh-Hans": "显示后台终端与最近输出"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/pwd",
+          "description": {
+            "en": "Show the current working directory",
+            "zh-Hant": "顯示目前的工作目錄",
+            "ja": "現在の作業ディレクトリを表示",
+            "zh-Hans": "显示当前工作目录"
+          },
+          "source": "cli:codex 0.157.0 slash menu"
+        },
+        {
+          "command": "/quit",
+          "description": {
+            "en": "Exit the CLI",
+            "zh-Hant": "結束 CLI",
+            "ja": "CLI を終了",
+            "zh-Hans": "退出 CLI"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/raw",
+          "description": {
+            "en": "Toggle raw scrollback mode",
+            "zh-Hant": "切換原始捲動輸出模式",
+            "ja": "raw スクロールバックモードを切り替え",
+            "zh-Hans": "切换原始滚动输出模式"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/recap",
+          "description": {
+            "en": "Summarize the current conversation now",
+            "zh-Hant": "立即摘要目前的對話",
+            "ja": "現在の会話をすぐに要約",
+            "zh-Hans": "立即总结当前对话"
+          },
+          "source": "cli:codex 0.157.0 slash menu"
+        },
+        {
+          "command": "/rename",
+          "description": {
+            "en": "Rename the current chat",
+            "zh-Hant": "重新命名目前對話",
+            "ja": "現在のチャットの名前を変更",
+            "zh-Hans": "重命名当前对话"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/resume",
+          "description": {
+            "en": "Resume a saved chat",
+            "zh-Hant": "繼續已儲存的對話",
+            "ja": "保存済みチャットを再開",
+            "zh-Hans": "继续已保存的对话"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/review",
+          "description": {
+            "en": "Review your working tree changes",
+            "zh-Hant": "審查工作目錄的變更",
+            "ja": "作業ツリーの変更をレビュー",
+            "zh-Hans": "审查工作目录的更改"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/sandbox-add-read-dir",
+          "description": {
+            "en": "Grant sandbox read access to a directory (Windows)",
+            "zh-Hant": "授予沙箱讀取目錄權限（Windows）",
+            "ja": "サンドボックスに読み取り権限を付与（Windows）",
+            "zh-Hans": "授予沙箱读取目录权限（Windows）"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/setup-default-sandbox",
+          "description": {
+            "en": "Set up the elevated sandbox (Windows only)",
+            "zh-Hant": "設定提升權限沙箱（僅限 Windows）",
+            "ja": "昇格サンドボックスを設定（Windows のみ）",
+            "zh-Hans": "设置提升权限沙箱（仅限 Windows）"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/side",
+          "description": {
+            "en": "Start an ephemeral side chat",
+            "zh-Hant": "開啟臨時的旁支對話",
+            "ja": "一時的なサイドチャットを開始",
+            "zh-Hans": "开启临时的旁支对话"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/skills",
+          "description": {
+            "en": "Browse and use skills",
+            "zh-Hant": "瀏覽並使用技能",
+            "ja": "スキルを参照して使用",
+            "zh-Hans": "浏览并使用技能"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/status",
+          "description": {
+            "en": "Show session configuration and token usage",
+            "zh-Hant": "顯示工作階段設定與 token 用量",
+            "ja": "セッション設定と token 使用量を表示",
+            "zh-Hans": "显示会话设置与 token 用量"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/statusline",
+          "description": {
+            "en": "Configure status-line footer items",
+            "zh-Hant": "設定底部狀態列項目",
+            "ja": "フッターのステータスライン項目を設定",
+            "zh-Hans": "设置底部状态栏项目"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/stop",
+          "description": {
+            "en": "Stop all background terminals",
+            "zh-Hant": "停止所有背景終端機",
+            "ja": "すべてのバックグラウンド端末を停止",
+            "zh-Hans": "停止所有后台终端"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/subagents",
+          "description": {
+            "en": "Switch between this session's subagents",
+            "zh-Hant": "切換本工作階段的子代理",
+            "ja": "このセッションのサブエージェントを切り替え",
+            "zh-Hans": "切换本会话的子代理"
+          },
+          "source": "cli:codex 0.157.0 slash menu"
+        },
+        {
+          "command": "/theme",
+          "description": {
+            "en": "Choose a syntax-highlighting theme",
+            "zh-Hant": "選擇語法醒目提示主題",
+            "ja": "シンタックスハイライトのテーマを選択",
+            "zh-Hans": "选择语法高亮主题"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/title",
+          "description": {
+            "en": "Configure terminal title items",
+            "zh-Hant": "設定終端機標題項目",
+            "ja": "ターミナルのタイトル項目を設定",
+            "zh-Hans": "设置终端标题项目"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/tui",
+          "description": {
+            "en": "Choose the TUI mode for the next launch",
+            "zh-Hant": "選擇下次啟動的 TUI 模式",
+            "ja": "次回起動時の TUI モードを選ぶ",
+            "zh-Hans": "选择下次启动的 TUI 模式"
+          },
+          "source": "cli:codex 0.157.0 slash menu"
+        },
+        {
+          "command": "/usage",
+          "description": {
+            "en": "View account token usage",
+            "zh-Hant": "檢視帳號 token 用量",
+            "ja": "アカウントの token 使用量を表示",
+            "zh-Hans": "查看账号 token 用量"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/vim",
+          "description": {
+            "en": "Toggle Vim mode for the composer",
+            "zh-Hant": "切換輸入框的 Vim 模式",
+            "ja": "入力欄の Vim モードを切り替え",
+            "zh-Hans": "切换输入框的 Vim 模式"
+          },
+          "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/voice",
+          "description": {
+            "en": "Start or stop voice input",
+            "zh-Hant": "開始或停止語音輸入",
+            "ja": "音声入力を開始・停止",
+            "zh-Hans": "开始或停止语音输入"
+          },
+          "source": "cli:codex 0.157.0 slash menu"
+        },
+        {
+          "command": "/warnings",
+          "description": {
+            "en": "View retained warnings and diagnostics",
+            "zh-Hant": "檢視保留的警告與診斷資訊",
+            "ja": "保持された警告と診断情報を表示",
+            "zh-Hans": "查看保留的警告与诊断信息"
+          },
+          "source": "cli:codex 0.157.0 slash menu"
+        },
+        {
+          "command": "/worktree",
+          "description": {
+            "en": "Start or continue a conversation in a new worktree",
+            "zh-Hant": "在新的 worktree 開始或繼續對話",
+            "ja": "新しい worktree で会話を開始・継続",
+            "zh-Hans": "在新的 worktree 开始或继续对话"
+          },
+          "source": "cli:codex 0.157.0 slash menu"
+        }
+      ]
+    },
+    "copilot": {
+      "name": "GitHub Copilot CLI",
+      "commands": [
+        {
+          "command": "/add-dir",
+          "description": {
+            "en": "Allow file access to a directory",
+            "zh-Hant": "允許存取目錄中的檔案",
+            "ja": "ディレクトリへのファイルアクセスを許可",
+            "zh-Hans": "允许访问目录中的文件"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/after",
+          "description": {
+            "en": "Schedule a one-time prompt (experimental)",
+            "zh-Hant": "排程一次性提示（實驗性）",
+            "ja": "一回限りのプロンプトを予約（実験的）",
+            "zh-Hans": "计划一次性提示（实验性）"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/agent",
+          "description": {
+            "en": "Browse and select an agent",
+            "zh-Hant": "瀏覽並選擇代理",
+            "ja": "エージェントを参照して選択",
+            "zh-Hans": "浏览并选择代理"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/allow-all",
+          "description": {
+            "en": "Enable all permissions (tools, paths and URLs)",
+            "zh-Hant": "開啟所有權限（工具、路徑與網址）",
+            "ja": "すべての権限を許可（ツール・パス・URL）",
+            "zh-Hans": "开启所有权限（工具、路径与网址）"
+          },
+          "source": "cli:copilot 1.0.88 slash menu"
+        },
+        {
+          "command": "/app",
+          "description": {
+            "en": "Open session in the GitHub Copilot app",
+            "zh-Hant": "在 GitHub Copilot app 開啟工作階段",
+            "ja": "GitHub Copilot app でセッションを開く",
+            "zh-Hans": "在 GitHub Copilot app 中打开会话"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/ask",
+          "description": {
+            "en": "Ask a side question outside the history",
+            "zh-Hant": "提出不列入紀錄的附帶問題",
+            "ja": "履歴に残さずサイド質問する",
+            "zh-Hans": "提出不计入历史的附带问题"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/autopilot",
+          "description": {
+            "en": "Start or refocus autopilot mode",
+            "zh-Hant": "啟動或重新聚焦 autopilot 模式",
+            "ja": "autopilot モードを開始・再設定",
+            "zh-Hans": "启动或重新聚焦 autopilot 模式"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/changelog",
+          "description": {
+            "en": "Show the CLI changelog",
+            "zh-Hant": "顯示 CLI 變更紀錄",
+            "ja": "CLI の変更履歴を表示",
+            "zh-Hans": "显示 CLI 更新日志"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/chronicle",
+          "description": {
+            "en": "Session history tools and insights",
+            "zh-Hant": "工作階段歷史工具與洞察",
+            "ja": "セッション履歴ツールと分析",
+            "zh-Hans": "会话历史工具与洞察"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/clear",
+          "description": {
+            "en": "Start a new conversation",
+            "zh-Hant": "開始新對話",
+            "ja": "新しい会話を開始",
+            "zh-Hans": "开始新对话"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/clikit",
+          "description": {
+            "en": "Preview CLI business components",
+            "zh-Hant": "預覽 CLI 業務元件",
+            "ja": "CLI ビジネスコンポーネントをプレビュー",
+            "zh-Hans": "预览 CLI 业务组件"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/collect-debug-logs",
+          "description": {
+            "en": "Collect debug logs to a .tgz file or secret gist",
+            "zh-Hant": "將除錯紀錄收集成 .tgz 或私密 gist",
+            "ja": "デバッグログを .tgz か非公開 gist に収集",
+            "zh-Hans": "将调试日志收集成 .tgz 或私密 gist"
+          },
+          "source": "cli:copilot 1.0.88 slash menu"
+        },
+        {
+          "command": "/compact",
+          "description": {
+            "en": "Summarize history to save context",
+            "zh-Hant": "摘要對話以節省上下文",
+            "ja": "履歴を要約してコンテキスト節約",
+            "zh-Hans": "总结对话以节省上下文"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/computer",
+          "description": {
+            "en": "Show or toggle Computer Use",
+            "zh-Hant": "顯示或切換 Computer Use",
+            "ja": "Computer Use を表示・切り替え",
+            "zh-Hans": "显示或切换 Computer Use"
+          },
+          "source": "cli:copilot 1.0.88 slash menu"
+        },
+        {
+          "command": "/context",
+          "description": {
+            "en": "Show context window token usage",
+            "zh-Hant": "顯示上下文視窗 token 用量",
+            "ja": "コンテキストの token 使用量を表示",
+            "zh-Hans": "显示上下文窗口 token 用量"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/copy",
+          "description": {
+            "en": "Copy the last response to clipboard",
+            "zh-Hant": "複製上一則回應到剪貼簿",
+            "ja": "最後の応答をクリップボードにコピー",
+            "zh-Hans": "复制上一条回复到剪贴板"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/cwd",
+          "description": {
+            "en": "Change or show the working directory",
+            "zh-Hant": "變更或顯示工作目錄",
+            "ja": "作業ディレクトリを変更・表示",
+            "zh-Hans": "更改或显示工作目录"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/delegate",
+          "description": {
+            "en": "Delegate changes as an AI-generated PR",
+            "zh-Hant": "委派變更並由 AI 建立 PR",
+            "ja": "変更を委任し AI が PR を作成",
+            "zh-Hans": "委派更改并由 AI 生成 PR"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/diagnose",
+          "description": {
+            "en": "Analyze session log for issues",
+            "zh-Hant": "分析工作階段日誌中的問題",
+            "ja": "セッションログの問題を分析",
+            "zh-Hans": "分析会话日志中的问题"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/diff",
+          "description": {
+            "en": "Review changes in the current directory",
+            "zh-Hant": "檢視目前目錄的變更",
+            "ja": "現在のディレクトリの変更を確認",
+            "zh-Hans": "查看当前目录的更改"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/downgrade",
+          "description": {
+            "en": "Switch to a specific CLI version",
+            "zh-Hant": "切換到指定的 CLI 版本",
+            "ja": "指定した CLI バージョンに切り替え",
+            "zh-Hans": "切换到指定的 CLI 版本"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/env",
+          "description": {
+            "en": "Show loaded environment details",
+            "zh-Hant": "顯示已載入的環境資訊",
+            "ja": "読み込まれた環境の詳細を表示",
+            "zh-Hans": "显示已加载的环境信息"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/every",
+          "description": {
+            "en": "Schedule a recurring prompt (experimental)",
+            "zh-Hant": "排程週期性提示（實驗性）",
+            "ja": "定期的なプロンプトを予約（実験的）",
+            "zh-Hans": "计划周期性提示（实验性）"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/exit",
+          "description": {
+            "en": "Close the current session",
+            "zh-Hant": "關閉目前工作階段",
+            "ja": "現在のセッションを閉じる",
+            "zh-Hans": "关闭当前会话"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/experimental",
+          "description": {
+            "en": "Toggle or show experimental features",
+            "zh-Hant": "切換或顯示實驗性功能",
+            "ja": "実験的機能を切り替え・表示",
+            "zh-Hans": "切换或显示实验性功能"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/extensions",
+          "description": {
+            "en": "Manage CLI extensions (experimental)",
+            "zh-Hant": "管理 CLI 擴充功能（實驗性）",
+            "ja": "CLI 拡張機能を管理（実験的）",
+            "zh-Hans": "管理 CLI 扩展（实验性）"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/feedback",
+          "description": {
+            "en": "Send feedback about the CLI",
+            "zh-Hant": "提供 CLI 意見回饋",
+            "ja": "CLI へのフィードバックを送信",
+            "zh-Hans": "提交 CLI 反馈"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/fleet",
+          "description": {
+            "en": "Run task parts with parallel subagents",
+            "zh-Hant": "以平行子代理執行任務",
+            "ja": "サブエージェントで並列実行",
+            "zh-Hans": "以并行子代理执行任务"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/fork",
+          "description": {
+            "en": "Fork the session into a new session",
+            "zh-Hant": "將工作階段分支為新工作階段",
+            "ja": "セッションを新しいセッションに分岐",
+            "zh-Hans": "将会话分叉为新会话"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/help",
+          "description": {
+            "en": "Show help for interactive commands",
+            "zh-Hant": "顯示互動指令說明",
+            "ja": "対話コマンドのヘルプを表示",
+            "zh-Hans": "显示交互命令帮助"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/ide",
+          "description": {
+            "en": "Connect to an IDE workspace",
+            "zh-Hant": "連接 IDE 工作區",
+            "ja": "IDE ワークスペースに接続",
+            "zh-Hans": "连接 IDE 工作区"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/init",
+          "description": {
+            "en": "Initialize Copilot instructions for repo",
+            "zh-Hant": "為儲存庫初始化 Copilot 指示",
+            "ja": "リポジトリの Copilot 指示を初期化",
+            "zh-Hans": "为仓库初始化 Copilot 指令"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/instructions",
+          "description": {
+            "en": "View and toggle custom instruction files",
+            "zh-Hant": "檢視並切換自訂指示檔案",
+            "ja": "カスタム指示ファイルを表示・切替",
+            "zh-Hans": "查看并切换自定义指令文件"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/keep-alive",
+          "description": {
+            "en": "Prevent the machine from sleeping",
+            "zh-Hant": "防止電腦進入睡眠",
+            "ja": "マシンのスリープを防止",
+            "zh-Hans": "防止电脑进入睡眠"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/limits",
+          "description": {
+            "en": "Manage response AI credit limits",
+            "zh-Hant": "管理回應 AI 點數上限",
+            "ja": "応答の AI クレジット上限を管理",
+            "zh-Hans": "管理回复 AI 额度上限"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/list-dirs",
+          "description": {
+            "en": "List directories with file access",
+            "zh-Hant": "列出允許存取的目錄",
+            "ja": "アクセス許可済みのディレクトリを一覧",
+            "zh-Hans": "列出允许访问的目录"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/login",
+          "description": {
+            "en": "Log in to Copilot",
+            "zh-Hant": "登入 Copilot",
+            "ja": "Copilot にログイン",
+            "zh-Hans": "登录 Copilot"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/logout",
+          "description": {
+            "en": "Log out of Copilot",
+            "zh-Hant": "登出 Copilot",
+            "ja": "Copilot からログアウト",
+            "zh-Hans": "退出 Copilot 登录"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/lsp",
+          "description": {
+            "en": "Manage language server configuration",
+            "zh-Hant": "管理語言伺服器設定",
+            "ja": "言語サーバー設定を管理",
+            "zh-Hans": "管理语言服务器设置"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/mcp",
+          "description": {
+            "en": "Manage MCP server configuration",
+            "zh-Hant": "管理 MCP 伺服器設定",
+            "ja": "MCP サーバー設定を管理",
+            "zh-Hans": "管理 MCP 服务器设置"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/memory",
+          "description": {
+            "en": "Show memory status or turn memory on or off",
+            "zh-Hant": "顯示記憶狀態，或開關跨工作階段記憶",
+            "ja": "メモリの状態表示、またはオン・オフ",
+            "zh-Hans": "显示记忆状态，或开关跨会话记忆"
+          },
+          "source": "cli:copilot 1.0.88 slash menu"
+        },
+        {
+          "command": "/model",
+          "description": {
+            "en": "Select the AI model",
+            "zh-Hant": "選擇 AI 模型",
+            "ja": "AI モデルを選択",
+            "zh-Hans": "选择 AI 模型"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/move",
+          "description": {
+            "en": "Move changes into a new Git worktree",
+            "zh-Hant": "將未提交變更移至新 Git worktree",
+            "ja": "未コミット変更を新しい Git worktree へ",
+            "zh-Hans": "将未提交更改移至新 Git worktree"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/new",
+          "description": {
+            "en": "Start a new conversation",
+            "zh-Hant": "開始新的對話",
+            "ja": "新しい会話を開始",
+            "zh-Hans": "开始新的对话"
+          },
+          "source": "cli:copilot 1.0.88 slash menu"
+        },
+        {
+          "command": "/permissions",
+          "description": {
+            "en": "Switch or show permission mode",
+            "zh-Hant": "切換或顯示權限模式",
+            "ja": "権限モードを切り替え・表示",
+            "zh-Hans": "切换或显示权限模式"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/plan",
+          "description": {
+            "en": "Create an implementation plan",
+            "zh-Hant": "撰寫程式前建立實作計畫",
+            "ja": "コーディング前に実装計画を作成",
+            "zh-Hans": "编码前创建实现计划"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/plugin",
+          "description": {
+            "en": "Open the plugins dashboard",
+            "zh-Hant": "開啟外掛儀表板",
+            "ja": "プラグインダッシュボードを開く",
+            "zh-Hans": "打开插件仪表板"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/pr",
+          "description": {
+            "en": "Manage PRs for the current branch",
+            "zh-Hant": "管理目前分支的 PR",
+            "ja": "現在のブランチの PR を管理",
+            "zh-Hans": "管理当前分支的 PR"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/refine",
+          "description": {
+            "en": "Rewrite a rough prompt clearly",
+            "zh-Hant": "將草擬提示改寫得更清楚",
+            "ja": "ラフなプロンプトを明確に書き直す",
+            "zh-Hans": "将草拟提示改写得更清晰"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/remote",
+          "description": {
+            "en": "Show or toggle remote control",
+            "zh-Hant": "顯示或切換遠端控制",
+            "ja": "リモート操作の表示・切替",
+            "zh-Hans": "显示或切换远程控制"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/rename",
+          "description": {
+            "en": "Rename the session, or name it from the conversation",
+            "zh-Hant": "重新命名工作階段，或依對話自動命名",
+            "ja": "セッション名を変更、または会話から自動命名",
+            "zh-Hans": "重命名会话，或按对话自动命名"
+          },
+          "source": "cli:copilot 1.0.88 slash menu"
+        },
+        {
+          "command": "/research",
+          "description": {
+            "en": "Run deep research on a topic",
+            "zh-Hant": "針對主題進行深入研究",
+            "ja": "トピックを詳しく調査",
+            "zh-Hans": "针对主题进行深度研究"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/reset-allowed-tools",
+          "description": {
+            "en": "Reset session tool and path approvals",
+            "zh-Hant": "重設本工作階段的工具與路徑核准",
+            "ja": "セッションのツール・パス承認をリセット",
+            "zh-Hans": "重置本会话的工具与路径批准"
+          },
+          "source": "cli:copilot 1.0.88 slash menu"
+        },
+        {
+          "command": "/restart",
+          "description": {
+            "en": "Restart the CLI and restore sessions",
+            "zh-Hant": "重新啟動 CLI 並還原工作階段",
+            "ja": "CLI を再起動しセッションを復元",
+            "zh-Hans": "重启 CLI 并恢复会话"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/resume",
+          "description": {
+            "en": "Switch to another session",
+            "zh-Hant": "切換到其他工作階段",
+            "ja": "別のセッションに切り替え",
+            "zh-Hans": "切换到其他会话"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/review",
+          "description": {
+            "en": "Run code review on changes",
+            "zh-Hant": "對變更執行程式碼審查",
+            "ja": "変更のコードレビューを実行",
+            "zh-Hans": "对更改运行代码审查"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/rubber-duck",
+          "description": {
+            "en": "Get a second opinion from rubber duck",
+            "zh-Hant": "向 rubber duck 徵詢第二意見",
+            "ja": "rubber duck にセカンドオピニオン",
+            "zh-Hans": "向 rubber duck 征求第二意见"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/sandbox",
+          "description": {
+            "en": "Manage OS-level sandboxing",
+            "zh-Hant": "管理作業系統層級沙箱",
+            "ja": "OS レベルのサンドボックスを管理",
+            "zh-Hans": "管理操作系统级沙箱"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/search",
+          "description": {
+            "en": "Search the conversation timeline",
+            "zh-Hant": "搜尋對話時間軸",
+            "ja": "会話タイムラインを検索",
+            "zh-Hans": "搜索对话时间线"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/security-review",
+          "description": {
+            "en": "Run a security review of local changes",
+            "zh-Hant": "對本機變更執行安全性審查",
+            "ja": "ローカル変更のセキュリティレビュー",
+            "zh-Hans": "对本地更改运行安全审查"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/session",
+          "description": {
+            "en": "Show session info and manage sessions",
+            "zh-Hant": "顯示並管理工作階段",
+            "ja": "セッション情報の表示と管理",
+            "zh-Hans": "显示并管理会话"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/settings",
+          "description": {
+            "en": "Open or change settings",
+            "zh-Hant": "開啟或變更設定",
+            "ja": "設定を開く・変更する",
+            "zh-Hans": "打开或更改设置"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/share",
+          "description": {
+            "en": "Share or export the current session",
+            "zh-Hant": "分享或匯出目前工作階段",
+            "ja": "現在のセッションを共有・エクスポート",
+            "zh-Hans": "分享或导出当前会话"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/skills",
+          "description": {
+            "en": "Manage agent skills",
+            "zh-Hant": "管理代理技能",
+            "ja": "エージェントスキルを管理",
+            "zh-Hans": "管理代理技能"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/statusline",
+          "description": {
+            "en": "Configure status line items",
+            "zh-Hant": "設定狀態列項目",
+            "ja": "ステータスラインの項目を設定",
+            "zh-Hans": "设置状态栏项目"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/subagents",
+          "description": {
+            "en": "Configure subagent models",
+            "zh-Hant": "設定子代理模型",
+            "ja": "サブエージェントのモデルを設定",
+            "zh-Hans": "设置子代理模型"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/tasks",
+          "description": {
+            "en": "View and manage tasks",
+            "zh-Hant": "檢視並管理任務",
+            "ja": "タスクを表示・管理",
+            "zh-Hans": "查看并管理任务"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/terminal-setup",
+          "description": {
+            "en": "Configure terminal for multiline input",
+            "zh-Hant": "設定終端機多行輸入",
+            "ja": "ターミナルの複数行入力を設定",
+            "zh-Hans": "设置终端多行输入"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/theme",
+          "description": {
+            "en": "View or set the color mode",
+            "zh-Hant": "檢視或設定色彩模式",
+            "ja": "カラーモードを表示・設定",
+            "zh-Hans": "查看或设置颜色模式"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/tuikit",
+          "description": {
+            "en": "Preview TUIkit components and colors",
+            "zh-Hant": "預覽 TUIkit 元件與色彩",
+            "ja": "TUIkit コンポーネントと色をプレビュー",
+            "zh-Hans": "预览 TUIkit 组件与颜色"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/undo",
+          "description": {
+            "en": "Roll the session back to an earlier turn",
+            "zh-Hant": "將工作階段回溯到先前回合",
+            "ja": "セッションを以前のターンに戻す",
+            "zh-Hans": "将会话回退到之前的回合"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/update",
+          "description": {
+            "en": "Update the CLI to the latest version",
+            "zh-Hant": "將 CLI 更新至最新版本",
+            "ja": "CLI を最新版に更新",
+            "zh-Hans": "将 CLI 更新到最新版本"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/usage",
+          "description": {
+            "en": "Show session usage metrics",
+            "zh-Hant": "顯示工作階段用量統計",
+            "ja": "セッションの使用状況を表示",
+            "zh-Hans": "显示会话用量统计"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/user",
+          "description": {
+            "en": "Manage the current GitHub user",
+            "zh-Hant": "管理目前的 GitHub 使用者",
+            "ja": "現在の GitHub ユーザーを管理",
+            "zh-Hans": "管理当前 GitHub 用户"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/version",
+          "description": {
+            "en": "Show version and check for updates",
+            "zh-Hant": "顯示版本並檢查更新",
+            "ja": "バージョン表示と更新確認",
+            "zh-Hans": "显示版本并检查更新"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/vim",
+          "description": {
+            "en": "Toggle Vim mode for the prompt box",
+            "zh-Hant": "切換輸入框 Vim 模式",
+            "ja": "入力欄の Vim モードを切り替え",
+            "zh-Hans": "切换输入框 Vim 模式"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/voice",
+          "description": {
+            "en": "Toggle voice mode or pick a mic",
+            "zh-Hant": "切換語音模式或選擇麥克風",
+            "ja": "音声モード切替・マイク選択",
+            "zh-Hans": "切换语音模式或选择麦克风"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        },
+        {
+          "command": "/worktree",
+          "description": {
+            "en": "Create and switch to a Git worktree",
+            "zh-Hant": "建立並切換至 Git worktree",
+            "ja": "Git worktree を作成して切り替え",
+            "zh-Hans": "创建并切换到 Git worktree"
+          },
+          "source": "https://docs.github.com/en/copilot/reference/cli-command-reference"
+        }
+      ]
+    },
+    "grok": {
+      "name": "Grok Build",
+      "commands": [
+        {
+          "command": "/always-approve",
+          "description": {
+            "en": "Toggle always-approve mode",
+            "zh-Hant": "切換一律核准模式",
+            "ja": "常時承認モードを切り替え",
+            "zh-Hans": "切换始终批准模式"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/announcements",
+          "description": {
+            "en": "Show or hide announcements",
+            "zh-Hant": "顯示或隱藏公告",
+            "ja": "お知らせの表示・非表示",
+            "zh-Hans": "显示或隐藏公告"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/auto",
+          "description": {
+            "en": "Toggle auto mode",
+            "zh-Hant": "切換自動模式",
+            "ja": "自動モードを切り替え",
+            "zh-Hans": "切换自动模式"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/btw",
+          "description": {
+            "en": "Ask a side question without interrupting",
+            "zh-Hant": "不中斷地提出附帶問題",
+            "ja": "中断せずに別の質問をする",
+            "zh-Hans": "不打断地提出附带问题"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/build-with-ai",
+          "description": {
+            "en": "Build AI apps on the xAI API",
+            "zh-Hant": "使用 xAI API 建立 AI 應用程式",
+            "ja": "xAI API で AI アプリを作る",
+            "zh-Hans": "使用 xAI API 构建 AI 应用"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/bundled:imagine",
+          "description": {
+            "en": "Guidance for the Imagine image and video tools",
+            "zh-Hant": "Imagine 圖片與影片工具的使用指引",
+            "ja": "Imagine 画像・動画ツールの使い方",
+            "zh-Hans": "Imagine 图片与视频工具的使用指引"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/code-review",
+          "description": {
+            "en": "Strict maintainability review of the code",
+            "zh-Hant": "嚴格審查程式碼的可維護性",
+            "ja": "コードの保守性を厳しくレビュー",
+            "zh-Hans": "严格审查代码的可维护性"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/compact",
+          "description": {
+            "en": "Compact conversation history",
+            "zh-Hant": "壓縮對話紀錄",
+            "ja": "会話履歴を圧縮",
+            "zh-Hans": "压缩对话历史"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/compact-mode",
+          "description": {
+            "en": "Toggle denser UI layout",
+            "zh-Hant": "切換緊湊介面版面",
+            "ja": "コンパクトな UI レイアウトを切り替え",
+            "zh-Hans": "切换紧凑界面布局"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/config-agents",
+          "description": {
+            "en": "Manage agent definitions",
+            "zh-Hant": "管理代理定義",
+            "ja": "エージェント定義を管理",
+            "zh-Hans": "管理代理定义"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/context",
+          "description": {
+            "en": "View context usage",
+            "zh-Hant": "檢視上下文用量",
+            "ja": "コンテキスト使用量を表示",
+            "zh-Hans": "查看上下文用量"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/copy",
+          "description": {
+            "en": "Copy the last response to the clipboard",
+            "zh-Hant": "複製最新回應到剪貼簿",
+            "ja": "最新の応答をクリップボードにコピー",
+            "zh-Hans": "复制最新回复到剪贴板"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/create-skill",
+          "description": {
+            "en": "Create a new Grok skill",
+            "zh-Hant": "建立新的 Grok 技能",
+            "ja": "新しい Grok スキルを作成",
+            "zh-Hans": "创建新的 Grok 技能"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/create-workflow",
+          "description": {
+            "en": "Author and save a new workflow",
+            "zh-Hant": "建立並儲存新工作流程",
+            "ja": "新しいワークフローを作成・保存",
+            "zh-Hans": "创建并保存新工作流"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/dashboard",
+          "description": {
+            "en": "Open the Agent Dashboard",
+            "zh-Hant": "開啟 Agent Dashboard",
+            "ja": "Agent Dashboard を開く",
+            "zh-Hans": "打开 Agent Dashboard"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/deep-research",
+          "description": {
+            "en": "Run a background research workflow",
+            "zh-Hant": "執行背景研究工作流程",
+            "ja": "バックグラウンドで調査ワークフローを実行",
+            "zh-Hans": "运行后台研究工作流"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/delete",
+          "description": {
+            "en": "Delete this session",
+            "zh-Hant": "刪除這個工作階段",
+            "ja": "このセッションを削除",
+            "zh-Hans": "删除这个会话"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/design",
+          "description": {
+            "en": "Write and review a design doc until reviewers agree",
+            "zh-Hant": "撰寫並審查設計文件直到審查者同意",
+            "ja": "設計書を作成しレビューで合意するまで改訂",
+            "zh-Hans": "撰写并审查设计文档直到审查者同意"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/docs",
+          "description": {
+            "en": "Open how-to guides or the online docs",
+            "zh-Hant": "開啟使用指南或線上文件",
+            "ja": "ハウツーガイドやオンライン文書を開く",
+            "zh-Hans": "打开使用指南或在线文档"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/doctor",
+          "description": {
+            "en": "Check this session and show available fixes",
+            "zh-Hant": "檢查工作階段並列出可用修正",
+            "ja": "セッションを診断し修正方法を表示",
+            "zh-Hans": "检查会话并列出可用修复"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/dream",
+          "description": {
+            "en": "Run memory consolidation",
+            "zh-Hant": "執行記憶整合",
+            "ja": "メモリの統合を実行",
+            "zh-Hans": "运行记忆整合"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/edit-prompt",
+          "description": {
+            "en": "Write the prompt in an external editor",
+            "zh-Hant": "用外部編輯器撰寫提示",
+            "ja": "外部エディタでプロンプトを書く",
+            "zh-Hans": "用外部编辑器撰写提示"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/effort",
+          "description": {
+            "en": "Set reasoning effort for the current model",
+            "zh-Hant": "設定目前模型的推理強度",
+            "ja": "現在のモデルの推論レベルを設定",
+            "zh-Hans": "设置当前模型的推理强度"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/execute-plan",
+          "description": {
+            "en": "Implement the PR plan from a design doc",
+            "zh-Hant": "依設計文件中的 PR 計畫逐一實作",
+            "ja": "設計書の PR 計画に沿って実装",
+            "zh-Hans": "按设计文档中的 PR 计划逐一实现"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/export",
+          "description": {
+            "en": "Export conversation to a file or clipboard",
+            "zh-Hant": "將對話匯出至檔案或剪貼簿",
+            "ja": "会話をファイルかクリップボードに出力",
+            "zh-Hans": "将对话导出到文件或剪贴板"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/feedback",
+          "description": {
+            "en": "Send feedback about the current session",
+            "zh-Hant": "針對目前工作階段送出意見",
+            "ja": "現在のセッションのフィードバックを送信",
+            "zh-Hans": "就当前会话发送反馈"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/find",
+          "description": {
+            "en": "Search the conversation scrollback",
+            "zh-Hant": "搜尋對話捲動紀錄",
+            "ja": "会話のスクロールバックを検索",
+            "zh-Hans": "搜索对话滚动记录"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/flush",
+          "description": {
+            "en": "Flush conversation memory to disk",
+            "zh-Hant": "立即將對話記憶寫入磁碟",
+            "ja": "会話メモリを今すぐディスクに保存",
+            "zh-Hans": "立即将对话记忆写入磁盘"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/fork",
+          "description": {
+            "en": "Branch the session into a peer agent",
+            "zh-Hant": "將工作階段分支為對等代理",
+            "ja": "セッションをピアエージェントに分岐",
+            "zh-Hans": "将会话分支为对等代理"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/game-assets",
+          "description": {
+            "en": "Engine-ready game art, 2D sprites to 3D models",
+            "zh-Hant": "可直接用於引擎的遊戲美術，從 2D 到 3D",
+            "ja": "ゲームエンジン向けの素材（2D から 3D）",
+            "zh-Hans": "可直接用于引擎的游戏美术，从 2D 到 3D"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/goal",
+          "description": {
+            "en": "Set, manage or check an autonomous goal",
+            "zh-Hant": "設定、管理或檢查自主目標",
+            "ja": "自律的な目標を設定・管理・確認",
+            "zh-Hans": "设置、管理或检查自主目标"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/help",
+          "description": {
+            "en": "Browse commands and keyboard shortcuts",
+            "zh-Hant": "瀏覽指令與鍵盤快速鍵",
+            "ja": "コマンドとキーボードショートカットを表示",
+            "zh-Hans": "浏览命令和键盘快捷键"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/history",
+          "description": {
+            "en": "Search prompt history",
+            "zh-Hant": "搜尋提示紀錄",
+            "ja": "プロンプト履歴を検索",
+            "zh-Hans": "搜索提示记录"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/home",
+          "description": {
+            "en": "Return to the welcome screen",
+            "zh-Hant": "返回歡迎畫面",
+            "ja": "ウェルカム画面に戻る",
+            "zh-Hans": "返回欢迎界面"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/hooks",
+          "description": {
+            "en": "Manage hooks",
+            "zh-Hant": "管理 hooks",
+            "ja": "hooks を管理",
+            "zh-Hans": "管理 hooks"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/imagine",
+          "description": {
+            "en": "Generate an image from text",
+            "zh-Hant": "依文字描述產生圖片",
+            "ja": "テキストから画像を生成",
+            "zh-Hans": "根据文字描述生成图片"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/imagine-video",
+          "description": {
+            "en": "Generate a video from text",
+            "zh-Hant": "依文字描述產生影片",
+            "ja": "テキストから動画を生成",
+            "zh-Hans": "根据文字描述生成视频"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/implement",
+          "description": {
+            "en": "Implement, review and fix in a loop",
+            "zh-Hant": "以實作、審查、修正的循環完成工作",
+            "ja": "実装・レビュー・修正を繰り返して仕上げる",
+            "zh-Hans": "以实现、审查、修复的循环完成工作"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/import-claude",
+          "description": {
+            "en": "Import Claude settings",
+            "zh-Hant": "匯入 Claude 設定",
+            "ja": "Claude の設定をインポート",
+            "zh-Hans": "导入 Claude 设置"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/jump",
+          "description": {
+            "en": "Jump to a turn in the conversation",
+            "zh-Hant": "跳到對話中的某一回合",
+            "ja": "会話内の特定のターンへ移動",
+            "zh-Hans": "跳到对话中的某一轮"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/learn",
+          "description": {
+            "en": "Learn from past sessions and tune your skills and setup",
+            "zh-Hant": "從過去的工作階段學習並調整技能與設定",
+            "ja": "過去のセッションから学びスキルや設定を調整",
+            "zh-Hans": "从过去的会话学习并调整技能与设置"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/learn-traces",
+          "description": {
+            "en": "Distill collected sessions into harness improvements",
+            "zh-Hant": "從收集的工作階段歸納出改進項目",
+            "ja": "収集したセッションから改善点をまとめる",
+            "zh-Hans": "从收集的会话归纳出改进项目"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/login",
+          "description": {
+            "en": "Sign in",
+            "zh-Hant": "登入",
+            "ja": "サインイン",
+            "zh-Hans": "登录"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/logout",
+          "description": {
+            "en": "Sign out of the current account",
+            "zh-Hant": "登出目前帳號",
+            "ja": "現在のアカウントからサインアウト",
+            "zh-Hans": "退出当前账号"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/loop",
+          "description": {
+            "en": "Run a prompt on a recurring interval",
+            "zh-Hant": "定期重複執行提示",
+            "ja": "プロンプトを定期的に実行",
+            "zh-Hans": "定期重复执行提示"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/marketplace",
+          "description": {
+            "en": "Browse the plugin marketplace",
+            "zh-Hant": "瀏覽外掛市集",
+            "ja": "プラグインマーケットプレイスを表示",
+            "zh-Hans": "浏览插件市场"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/mcps",
+          "description": {
+            "en": "Manage MCP servers",
+            "zh-Hant": "管理 MCP 伺服器",
+            "ja": "MCP サーバーを管理",
+            "zh-Hans": "管理 MCP 服务器"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/memory",
+          "description": {
+            "en": "Browse and manage your memories",
+            "zh-Hant": "瀏覽與管理記憶",
+            "ja": "メモリを閲覧・管理",
+            "zh-Hans": "浏览和管理记忆"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/minimal",
+          "description": {
+            "en": "Switch this session to minimal mode (back with /fullscreen)",
+            "zh-Hant": "切換為精簡模式（/fullscreen 可切回）",
+            "ja": "ミニマルモードに切り替え（/fullscreen で戻る）",
+            "zh-Hans": "切换为精简模式（/fullscreen 可切回）"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/model",
+          "description": {
+            "en": "Switch the active model",
+            "zh-Hant": "切換使用中的模型",
+            "ja": "使用するモデルを切り替え",
+            "zh-Hans": "切换当前模型"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/multiline",
+          "description": {
+            "en": "Toggle multiline input",
+            "zh-Hant": "切換多行輸入",
+            "ja": "複数行入力を切り替え",
+            "zh-Hans": "切换多行输入"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/new",
+          "description": {
+            "en": "Start a new session",
+            "zh-Hant": "開始新的工作階段",
+            "ja": "新しいセッションを開始",
+            "zh-Hans": "开始新会话"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/personas",
+          "description": {
+            "en": "Manage personas",
+            "zh-Hant": "管理角色設定",
+            "ja": "ペルソナを管理",
+            "zh-Hans": "管理角色设定"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/plan",
+          "description": {
+            "en": "Enter plan mode",
+            "zh-Hant": "進入規劃模式",
+            "ja": "プランモードに入る",
+            "zh-Hans": "进入计划模式"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/plugins",
+          "description": {
+            "en": "Manage plugins",
+            "zh-Hant": "管理外掛",
+            "ja": "プラグインを管理",
+            "zh-Hans": "管理插件"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/pr-babysit",
+          "description": {
+            "en": "Watch PRs: fix CI, answer reviews, resolve conflicts",
+            "zh-Hant": "看顧 PR：修 CI、回應審查、解決衝突",
+            "ja": "PR を見守り CI 修正・レビュー対応・競合解決",
+            "zh-Hans": "看护 PR：修 CI、回应审查、解决冲突"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/privacy",
+          "description": {
+            "en": "Show or toggle privacy and data retention",
+            "zh-Hant": "顯示或切換隱私與資料保留",
+            "ja": "プライバシーとデータ保持の表示・切替",
+            "zh-Hans": "显示或切换隐私与数据保留"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/queue",
+          "description": {
+            "en": "List queued prompts",
+            "zh-Hant": "列出排隊中的提示",
+            "ja": "キュー内のプロンプトを一覧表示",
+            "zh-Hans": "列出排队中的提示"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/quit",
+          "description": {
+            "en": "Quit the application",
+            "zh-Hant": "結束應用程式",
+            "ja": "アプリケーションを終了",
+            "zh-Hans": "退出应用程序"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/recap",
+          "description": {
+            "en": "Summarize the session so far",
+            "zh-Hant": "摘要目前為止的工作階段",
+            "ja": "ここまでのセッションを要約",
+            "zh-Hans": "总结目前为止的会话"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/release-notes",
+          "description": {
+            "en": "View release notes for the current version",
+            "zh-Hant": "檢視目前版本的發行說明",
+            "ja": "現在のバージョンのリリースノートを表示",
+            "zh-Hans": "查看当前版本的发行说明"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/remember",
+          "description": {
+            "en": "Save a memory note",
+            "zh-Hant": "儲存記憶筆記",
+            "ja": "メモリノートを保存",
+            "zh-Hans": "保存记忆笔记"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/rename",
+          "description": {
+            "en": "Rename the current session",
+            "zh-Hant": "重新命名目前工作階段",
+            "ja": "現在のセッション名を変更",
+            "zh-Hans": "重命名当前会话"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/resume",
+          "description": {
+            "en": "Resume a previous session",
+            "zh-Hant": "繼續先前的工作階段",
+            "ja": "以前のセッションを再開",
+            "zh-Hans": "恢复之前的会话"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/resume-claude",
+          "description": {
+            "en": "Continue from a recent Claude Code session",
+            "zh-Hant": "接續最近的 Claude Code 工作階段",
+            "ja": "最近の Claude Code セッションから再開",
+            "zh-Hans": "接续最近的 Claude Code 会话"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/resume-codex",
+          "description": {
+            "en": "Continue from a recent Codex session",
+            "zh-Hant": "接續最近的 Codex 工作階段",
+            "ja": "最近の Codex セッションから再開",
+            "zh-Hans": "接续最近的 Codex 会话"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/resume-cursor",
+          "description": {
+            "en": "Continue from a recent Cursor session",
+            "zh-Hant": "接續最近的 Cursor 工作階段",
+            "ja": "最近の Cursor セッションから再開",
+            "zh-Hans": "接续最近的 Cursor 会话"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/review",
+          "description": {
+            "en": "Run a reviewer subagent on your branch or changes",
+            "zh-Hant": "以審查子代理檢查分支或變更",
+            "ja": "レビュー用サブエージェントでブランチや変更を確認",
+            "zh-Hans": "以审查子代理检查分支或变更"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/rewind",
+          "description": {
+            "en": "Rewind to a previous turn",
+            "zh-Hant": "回到先前的回合",
+            "ja": "以前のターンに巻き戻す",
+            "zh-Hans": "回退到之前的轮次"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/session-info",
+          "description": {
+            "en": "Show session info",
+            "zh-Hant": "顯示工作階段資訊",
+            "ja": "セッション情報を表示",
+            "zh-Hans": "显示会话信息"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/sessions",
+          "description": {
+            "en": "Switch, rename, or close active sessions",
+            "zh-Hant": "切換、重新命名或關閉工作階段",
+            "ja": "セッションの切替・名前変更・終了",
+            "zh-Hans": "切换、重命名或关闭会话"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/settings",
+          "description": {
+            "en": "Open settings",
+            "zh-Hant": "開啟設定",
+            "ja": "設定を開く",
+            "zh-Hans": "打开设置"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/share",
+          "description": {
+            "en": "Share the current session via URL",
+            "zh-Hant": "以 URL 分享目前工作階段",
+            "ja": "現在のセッションを URL で共有",
+            "zh-Hans": "通过 URL 分享当前会话"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/skill-design-principles",
+          "description": {
+            "en": "Principles for writing and editing skills",
+            "zh-Hant": "撰寫與編輯技能的原則",
+            "ja": "スキルの作成・編集の指針",
+            "zh-Hans": "撰写与编辑技能的原则"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/skillify",
+          "description": {
+            "en": "Capture the session as a new skill",
+            "zh-Hant": "將工作階段存成新技能",
+            "ja": "セッションを新しいスキルとして保存",
+            "zh-Hans": "将会话保存为新技能"
+          },
+          "source": "https://x.ai/build"
+        },
+        {
+          "command": "/skills",
+          "description": {
+            "en": "Manage skills",
+            "zh-Hant": "管理技能",
+            "ja": "スキルを管理",
+            "zh-Hans": "管理技能"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/statusline",
+          "description": {
+            "en": "Configure the status line",
+            "zh-Hant": "設定狀態列",
+            "ja": "ステータスラインを設定",
+            "zh-Hans": "设置状态栏"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/tasks",
+          "description": {
+            "en": "List background tasks and subagents",
+            "zh-Hant": "列出背景工作與子代理",
+            "ja": "バックグラウンドタスクとサブエージェント一覧",
+            "zh-Hans": "列出后台任务和子代理"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/terminal-setup",
+          "description": {
+            "en": "Check terminal and clipboard setup",
+            "zh-Hant": "檢查終端機與剪貼簿設定",
+            "ja": "ターミナルとクリップボードの設定を確認",
+            "zh-Hans": "检查终端和剪贴板设置"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/theme",
+          "description": {
+            "en": "Switch the color theme",
+            "zh-Hant": "切換色彩主題",
+            "ja": "カラーテーマを切り替え",
+            "zh-Hans": "切换颜色主题"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/threejs-frame-conventions",
+          "description": {
+            "en": "Conventions for Three.js controls, camera and facing",
+            "zh-Hant": "Three.js 控制、相機與方向的慣例",
+            "ja": "Three.js の操作・カメラ・向きの規約",
+            "zh-Hans": "Three.js 控制、相机与方向的惯例"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/timeline",
+          "description": {
+            "en": "Toggle the timeline sidebar",
+            "zh-Hant": "切換時間軸側欄",
+            "ja": "タイムラインのサイドバーを切り替え",
+            "zh-Hans": "切换时间轴侧栏"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/timestamps",
+          "description": {
+            "en": "Toggle message timestamps",
+            "zh-Hant": "切換訊息時間戳記",
+            "ja": "メッセージのタイムスタンプを切り替え",
+            "zh-Hans": "切换消息时间戳"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/transcript",
+          "description": {
+            "en": "View the full transcript in your pager",
+            "zh-Hant": "在分頁程式中檢視完整紀錄",
+            "ja": "ページャーで全トランスクリプトを表示",
+            "zh-Hans": "在分页程序中查看完整记录"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/tutorial",
+          "description": {
+            "en": "Quick tips to get the most out of Grok Build",
+            "zh-Hant": "Grok Build 快速使用技巧",
+            "ja": "Grok Build を使いこなすためのヒント",
+            "zh-Hans": "Grok Build 快速使用技巧"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/usage",
+          "description": {
+            "en": "View credit usage or manage billing",
+            "zh-Hant": "檢視額度用量或管理帳單",
+            "ja": "クレジット使用量の確認・請求管理",
+            "zh-Hans": "查看额度用量或管理账单"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/view-plan",
+          "description": {
+            "en": "View the current plan",
+            "zh-Hant": "檢視目前的規劃",
+            "ja": "現在のプランを表示",
+            "zh-Hans": "查看当前计划"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/vim-mode",
+          "description": {
+            "en": "Toggle vim-style scrollback keybindings",
+            "zh-Hant": "切換 vim 風格捲動按鍵",
+            "ja": "vim 風スクロールキー操作を切り替え",
+            "zh-Hans": "切换 vim 风格滚动按键"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/voice",
+          "description": {
+            "en": "Toggle dictation",
+            "zh-Hant": "切換語音聽寫",
+            "ja": "音声入力を切り替え",
+            "zh-Hans": "切换语音听写"
+          },
+          "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/workflow",
+          "description": {
+            "en": "Launch or control a saved workflow",
+            "zh-Hant": "啟動或控制已儲存的工作流程",
+            "ja": "保存済みワークフローを起動・操作",
+            "zh-Hans": "启动或控制已保存的工作流"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/workflows",
+          "description": {
+            "en": "Open the live workflow run dashboard",
+            "zh-Hant": "開啟工作流程執行儀表板",
+            "ja": "ワークフロー実行ダッシュボードを開く",
+            "zh-Hans": "打开工作流运行仪表板"
+          },
+          "source": "https://docs.x.ai/build/modes-and-commands"
+        }
+      ]
+    }
+  }
+}
