@@ -1,6 +1,6 @@
 # PadRemote downloads
 
-[Download PadRemote Host 0.29.0](https://github.com/sakilu/PadRemoteIDE-releases/releases/tag/v0.29.0). No GitHub account is required. This repository contains downloads and release information only; source code is maintained separately.
+[Download PadRemote Host 0.39.0](https://github.com/sakilu/PadRemoteIDE-releases/releases/tag/v0.39.0). No GitHub account is required. This repository contains downloads and release information only; source code is maintained separately.
 
 | Platform | Installer | Default program location | Uninstall |
 | --- | --- | --- | --- |
@@ -10,6 +10,10 @@
 | Fedora/RHEL-compatible x86_64 or aarch64 | matching Setup `.rpm` | `/opt/padremote-host` | `sudo dnf remove padremote-host` |
 
 On Linux, open the package with your software installer or run `sudo apt install ./PACKAGE.deb` / `sudo dnf install ./PACKAGE.rpm`. Launch from the application menu or run `padremote-host` as your normal user. macOS PKG installs for the current user. Save your work before installing or removing: the flow stops Host and its terminals. Settings and projects are preserved. Custom settings locations remain user-managed; exit those Host instances before removing the package.
+
+**New in 0.39.0:** Conversation-file watching is now shared per project and skips dependency and build folders such as `node_modules` and `build`, fixing large memory and handle growth when several terminals were open. Network (UNC) paths printed in a terminal are no longer opened automatically. Opening a terminal no longer pauses other projects' terminals, several permission prompts in one turn each send a notification, and the optional auto-update rechecks that no terminal is in use right before restarting. On Windows, AI Agents require PowerShell as the terminal shell. A matching Android QA test build (0.39.0+51, not a store build) is published as [a separate pre-release](https://github.com/sakilu/PadRemoteIDE-releases/releases/tag/android-qa-v0.39.0-build51); no iPhone/iPad or Google Play release is included.
+
+Validation for 0.39.0 includes six platform/CPU builds and archive checks; Linux amd64 DEB and RPM installation, reinstallation and removal against 0.38.0; ARM64 and macOS PKG structure checks; Go and Flutter regression suites; a native Android tablet emulator run against a disposable Linux Host; and anonymous public-download handover from 0.38.0 on Windows and Linux amd64. Disposable Windows installer lifecycle QA, macOS/iPad and ARM64 runtime checks were skipped.
 
 **New in 0.29.0:** Tablets now reconnect by themselves after the Host restarts or updates: paired sessions are kept in `sessions.json` in the Host state folder (readable only by you), and the App pairs again with the password after two connection-request timeouts. Stopping the Host no longer signs every tablet out; use "Turn off sharing", "Revoke" or a password change to cut devices off. The tablet can edit each AI tool's launch arguments (`ai-agent-args-v1`); built-in tools still start with no permission-skipping flags, so any such flag is your own opt-in. While a tablet is connected, the voice proofreading model stays loaded instead of unloading after two idle minutes, so dictation no longer waits for a cold start. Gemini CLI is no longer a built-in tool. A matching Android QA test build (0.29.0+39, not a store build) is published as [a separate pre-release](https://github.com/sakilu/PadRemoteIDE-releases/releases/tag/android-qa-v0.29.0-build39); no iPhone/iPad or Google Play release is included.
 
@@ -21,6 +25,6 @@ Windows executables and installers are still unsigned, and macOS packages are no
 
 Validation for 0.29.0 includes six platform/CPU builds and archive checks; final Windows EXE/ZIP/Setup Defender scans; Linux amd64 DEB and RPM installation, reinstallation and removal against 0.28.0; ARM64 package structure and macOS PKG structure checks; Go and Flutter regression suites; a native Android tablet run against a disposable Linux Host; anonymous public-download handover from 0.28.0 on Windows and Linux amd64; and the public update channel from 0.12.0 (prompt) and 0.11.1 (automatic). Disposable Windows installer lifecycle QA, macOS/iPad and ARM64 runtime checks, and on-device checks of the reconnect and voice-model changes were skipped. Cross-compilation and structure checks do not establish native acceptance.
 
-**Android QA download:** [0.25.0+35 test APKs](https://github.com/sakilu/PadRemoteIDE-releases/releases/tag/android-qa-v0.25.0-build35), for armeabi-v7a, arm64-v8a and x86_64. These use a separate `.qa` package ID and debug signing. They are not Google Play releases. iPhone/iPad builds are not included; updating Host does not update the mobile App.
+**Android QA download:** [0.39.0+51 test APKs](https://github.com/sakilu/PadRemoteIDE-releases/releases/tag/android-qa-v0.39.0-build51), for armeabi-v7a, arm64-v8a and x86_64. These use a separate `.qa` package ID and debug signing. They are not Google Play releases. iPhone/iPad builds are not included; updating Host does not update the mobile App.
 
 Only download artifacts from this repository's Releases. No GitHub account or access token is needed to download public releases. Never provide AI credentials, project contents or Host configuration files to this repository.
