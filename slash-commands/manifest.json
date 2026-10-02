@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-25T11:04:09Z",
+  "generatedAt": "2026-10-02T04:36:18Z",
   "agents": {
     "agy": {
       "name": "Antigravity CLI",
@@ -1079,6 +1079,16 @@
             "zh-Hans": "管理 Claude Code 插件"
           },
           "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/plugin-authoring",
+          "description": {
+            "en": "Create a Claude Code mod: pane, band, status line or hook",
+            "zh-Hant": "製作 Claude Code 模組（面板、狀態列、hook）",
+            "ja": "Claude Code のmodを作成（パネル・フック等）",
+            "zh-Hans": "制作 Claude Code 模组（面板、状态栏、hook）"
+          },
+          "source": "cli:claude 2.1.287 slash menu"
         },
         {
           "command": "/powerup",
@@ -3044,6 +3054,16 @@
             "zh-Hans": "查看上下文用量"
           },
           "source": "https://docs.x.ai/build/modes-and-commands"
+        },
+        {
+          "command": "/context-window",
+          "description": {
+            "en": "Set the context window for the current model",
+            "zh-Hant": "設定目前模型的上下文視窗",
+            "ja": "現在のモデルのコンテキストウィンドウを設定",
+            "zh-Hans": "设置当前模型的上下文窗口"
+          },
+          "source": "cli:grok 1.0.46 slash menu"
         },
         {
           "command": "/copy",
