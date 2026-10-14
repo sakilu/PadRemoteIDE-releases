@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-09T04:36:30Z",
+  "generatedAt": "2026-10-14T04:36:35Z",
   "agents": {
     "agy": {
       "name": "Antigravity CLI",
@@ -3134,6 +3134,16 @@
             "zh-Hans": "删除这个会话"
           },
           "source": "cli:grok 1.0.41 slash menu"
+        },
+        {
+          "command": "/density",
+          "description": {
+            "en": "Set tool call density, from Detailed to Compact",
+            "zh-Hant": "設定工具呼叫的顯示密度，從詳細到精簡",
+            "ja": "ツール呼び出しの表示密度を詳細～簡潔で設定",
+            "zh-Hans": "设置工具调用的显示密度，从详细到精简"
+          },
+          "source": "cli:grok 1.0.52 slash menu"
         },
         {
           "command": "/design",
