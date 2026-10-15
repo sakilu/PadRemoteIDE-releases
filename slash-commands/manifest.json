@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-14T04:36:35Z",
+  "generatedAt": "2026-10-15T04:34:58Z",
   "agents": {
     "agy": {
       "name": "Antigravity CLI",
@@ -94,6 +94,16 @@
             "zh-Hans": "在工作区搜索代码（别名 /cs）"
           },
           "source": "cli:agy 1.2.11 slash menu"
+        },
+        {
+          "command": "/compact",
+          "description": {
+            "en": "Summarize history now to free up the context window",
+            "zh-Hant": "立即壓縮對話，摘要歷史以釋放上下文空間",
+            "ja": "会話を今すぐ要約し、コンテキストを空ける",
+            "zh-Hans": "立即压缩对话，总结历史以释放上下文空间"
+          },
+          "source": "cli:agy 1.3.5 slash menu"
         },
         {
           "command": "/config",
