@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-15T04:34:58Z",
+  "generatedAt": "2026-10-19T04:34:49Z",
   "agents": {
     "agy": {
       "name": "Antigravity CLI",
@@ -1656,6 +1656,16 @@
           "source": "https://developers.openai.com/codex/cli/slash-commands.md"
         },
         {
+          "command": "/config",
+          "description": {
+            "en": "Configure Codex preferences",
+            "zh-Hant": "設定 Codex 偏好",
+            "ja": "Codex の設定を変更",
+            "zh-Hans": "配置 Codex 偏好设置"
+          },
+          "source": "cli:codex 0.163.0 slash menu"
+        },
+        {
           "command": "/copy",
           "description": {
             "en": "Copy the latest completed Codex output",
@@ -1674,6 +1684,16 @@
             "zh-Hans": "管理本机后台服务器"
           },
           "source": "cli:codex 0.157.0 slash menu"
+        },
+        {
+          "command": "/daybreak",
+          "description": {
+            "en": "Learn about broader access for cybersecurity work",
+            "zh-Hant": "了解資安工作的更廣泛存取權限",
+            "ja": "サイバーセキュリティ業務の拡張アクセスについて",
+            "zh-Hans": "了解网络安全工作的更广泛访问权限"
+          },
+          "source": "cli:codex 0.163.0 slash menu"
         },
         {
           "command": "/debug-config",
