@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-19T04:34:49Z",
+  "generatedAt": "2026-10-22T04:35:28Z",
   "agents": {
     "agy": {
       "name": "Antigravity CLI",
@@ -424,6 +424,16 @@
             "zh-Hans": "监控后台 shell 任务"
           },
           "source": "https://antigravity.google/docs/cli/reference"
+        },
+        {
+          "command": "/teamwork",
+          "description": {
+            "en": "Invoke a team of agents to tackle large projects",
+            "zh-Hant": "召集代理團隊自主處理大型專案",
+            "ja": "エージェントチームで大規模プロジェクトを自律処理",
+            "zh-Hans": "召集智能体团队自主处理大型项目"
+          },
+          "source": "cli:agy 1.4.4 slash menu"
         },
         {
           "command": "/teamwork-preview",
