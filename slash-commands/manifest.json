@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-22T04:35:28Z",
+  "generatedAt": "2026-10-29T04:38:56Z",
   "agents": {
     "agy": {
       "name": "Antigravity CLI",
@@ -1964,6 +1964,16 @@
             "zh-Hans": "浏览已安装与可用的插件"
           },
           "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/presets",
+          "description": {
+            "en": "Run or save reusable prompts and slash commands",
+            "zh-Hant": "執行或儲存可重複使用的提示詞與斜線指令",
+            "ja": "再利用できるプロンプトとスラッシュコマンドを実行・保存",
+            "zh-Hans": "运行或保存可复用的提示词和斜杠命令"
+          },
+          "source": "cli:codex 0.165.0 slash menu"
         },
         {
           "command": "/ps",
