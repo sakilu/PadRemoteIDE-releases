@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-29T04:38:56Z",
+  "generatedAt": "2026-11-09T04:34:26Z",
   "agents": {
     "agy": {
       "name": "Antigravity CLI",
@@ -344,6 +344,26 @@
             "zh-Hans": "管理、发现、安装、卸载、启用和禁用插件"
           },
           "source": "cli:agy 1.3.2 slash menu"
+        },
+        {
+          "command": "/projects",
+          "description": {
+            "en": "Create and edit projects",
+            "zh-Hant": "建立並編輯專案",
+            "ja": "プロジェクトを作成・編集",
+            "zh-Hans": "创建并编辑项目"
+          },
+          "source": "cli:agy 1.5.3 slash menu"
+        },
+        {
+          "command": "/record",
+          "description": {
+            "en": "Dictate a prompt using your microphone",
+            "zh-Hant": "用麥克風口述輸入提示",
+            "ja": "マイクでプロンプトを音声入力",
+            "zh-Hans": "用麦克风口述输入提示词"
+          },
+          "source": "cli:agy 1.5.3 slash menu"
         },
         {
           "command": "/remote-control",
