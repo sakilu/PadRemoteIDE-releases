@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-09T04:34:26Z",
+  "generatedAt": "2026-11-10T04:33:34Z",
   "agents": {
     "agy": {
       "name": "Antigravity CLI",
@@ -1329,6 +1329,16 @@
             "zh-Hans": "检查分支更改的安全漏洞"
           },
           "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/send-to-project",
+          "description": {
+            "en": "Send this session's work to a Claude Project",
+            "zh-Hant": "將此工作階段的成果傳送到 Claude Project",
+            "ja": "このセッションの作業を Claude Project に送信",
+            "zh-Hans": "将本次会话的工作发送到 Claude Project"
+          },
+          "source": "cli:claude 2.1.322 slash menu"
         },
         {
           "command": "/setup-bedrock",
