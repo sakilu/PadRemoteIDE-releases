@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-10T04:33:34Z",
+  "generatedAt": "2026-11-13T04:33:27Z",
   "agents": {
     "agy": {
       "name": "Antigravity CLI",
@@ -1579,6 +1579,16 @@
             "zh-Hans": "为云端会话连接 GitHub"
           },
           "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/whiteboard",
+          "description": {
+            "en": "Make a new Whiteboard artifact from a brief",
+            "zh-Hant": "依簡述建立新的 Whiteboard 成品",
+            "ja": "概要から新しい Whiteboard 成果物を作成",
+            "zh-Hans": "根据简述创建新的 Whiteboard 产物"
+          },
+          "source": "cli:claude 2.1.323 slash menu"
         },
         {
           "command": "/workflow-authoring",
