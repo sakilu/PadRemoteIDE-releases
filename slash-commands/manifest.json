@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-13T04:33:27Z",
+  "generatedAt": "2026-11-20T04:35:45Z",
   "agents": {
     "agy": {
       "name": "Antigravity CLI",
@@ -2054,6 +2054,16 @@
             "zh-Hans": "切换原始滚动输出模式"
           },
           "source": "https://developers.openai.com/codex/cli/slash-commands.md"
+        },
+        {
+          "command": "/rc",
+          "description": {
+            "en": "Manage remote control for the local background server",
+            "zh-Hant": "管理本機背景伺服器的遠端控制",
+            "ja": "ローカルのバックグラウンドサーバーのリモート操作を管理",
+            "zh-Hans": "管理本地后台服务器的远程控制"
+          },
+          "source": "cli:codex 0.171.0 slash menu"
         },
         {
           "command": "/recap",
