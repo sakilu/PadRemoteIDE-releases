@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-20T04:35:45Z",
+  "generatedAt": "2026-11-24T04:33:42Z",
   "agents": {
     "agy": {
       "name": "Antigravity CLI",
@@ -649,6 +649,16 @@
             "zh-Hans": "加载 Claude API 参考资料"
           },
           "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/claude-approvals",
+          "description": {
+            "en": "Edit, explain or tune a Claude Approvals policy/classifier",
+            "zh-Hant": "編輯、說明或調整 Claude Approvals 政策檔或分類器",
+            "ja": "Claude Approvalsの方針や分類器を編集・説明・調整",
+            "zh-Hans": "编辑、说明或调整 Claude Approvals 策略文件或分类器"
+          },
+          "source": "cli:claude 2.1.331 slash menu"
         },
         {
           "command": "/clear",
@@ -1361,6 +1371,16 @@
           "source": "https://code.claude.com/docs/en/commands.md"
         },
         {
+          "command": "/ship",
+          "description": {
+            "en": "Open a pull request if none exists, review it, then watch it",
+            "zh-Hant": "若無 PR 則建立,在此審查後持續關注",
+            "ja": "PRがなければ作成し、ここでレビューして見守る",
+            "zh-Hans": "若无 PR 则创建,在此审查后持续关注"
+          },
+          "source": "cli:claude 2.1.331 slash menu"
+        },
+        {
           "command": "/simplify",
           "description": {
             "en": "Review changed code for cleanup and apply fixes",
@@ -1409,6 +1429,16 @@
             "zh-Hans": "设置状态栏"
           },
           "source": "https://code.claude.com/docs/en/commands.md"
+        },
+        {
+          "command": "/steward",
+          "description": {
+            "en": "Watch your open pull request here and fix what comes up",
+            "zh-Hant": "在此工作階段關注你開啟中的 PR 並修正問題",
+            "ja": "このセッションで公開中のPRを見守り問題を修正",
+            "zh-Hans": "在此会话中关注你打开的 PR 并修复出现的问题"
+          },
+          "source": "cli:claude 2.1.331 slash menu"
         },
         {
           "command": "/stickers",
